@@ -1,0 +1,12 @@
+name = "ADF Re-Cut";
+actionName = "Discord";
+action = "https://discord.gg/sNKr7fwHUr";
+logo = "mod.paa";
+logoOver = "mod.paa";
+logoSmall = "modicon.paa";
+tooltip = "ADF Re-Cut";
+overview = "ADF: Re-Cut is the continuation of the old ADFU mod.";
+author = "ADF Re-Cut Team | ADFUncut Mod Team";
+overviewPicture = "mod.paa";
+overviewText = "ADF: Re-Cut is the continuation of the old ADFU mod.";
+version = "0.9.0";
