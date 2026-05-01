@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Australian Defence Force Re-Cut">
+	<Package name="ADF_faction">
+		<Container name="General">
+			<Key ID="STR_ADF_AUTHOR">
+					<Original>ADFRC Team</Original>
+					<English>ADFRC Team</English>
+			</Key>
+			<Key ID="STR_ADFRC_AUTHOR">
+					<Original>ADFRC Team</Original>
+					<English>ADFRC Team</English>
+			</Key>
+			<Key ID="STR_ADF_TITLE">
+					<Original>ADF Re-Cut</Original>
+					<English>ADF Re-Cut</English>
+			</Key>
+			<Key ID="STR_ADF_faction_NAME">
+					<Original>Australian Defence Force</Original>
+					<English>Australian Defence Force</English>
+			</Key>
+			<Key ID="STR_ADF_OPFOR_FACTION_NAME">
+					<Original>ADF OPFOR</Original>
+					<English>ADF OPFOR</English>
+			</Key>
+		</Container>
+		<Container name="Vehicle_Classes">
+			<Key ID="STR_ADF_MEN_DPCU">
+					<Original>Men (Army DPCU)</Original>
+					<English>Men (Army DPCU)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_DPDU">
+					<Original>Men (2nd Commandos)</Original>
+					<English>Men (2nd Commandos)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_MCAM">
+					<Original>Men (MultiCam)</Original>
+					<English>Men (MultiCam)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_AMP">
+					<Original>Men (SASR)</Original>
+					<English>Men (SASR)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_AMCU">
+					<Original>Men (AMCU)</Original>
+					<English>Men (AMCU)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_RAAF">
+					<Original>Men (RAAF)</Original>
+					<English>Men (RAAF)</English>
+			</Key>
+			<Key ID="STR_ADF_MEN_RAN">
+					<Original>Men (RAN)</Original>
+					<English>Men (RAN)</English>
+			</Key>
+		</Container>
+		<Container name="Markers">
+			<Key ID="STR_ADF_MARKER_ADF">
+					<Original>Flag (ADF)</Original>
+					<English>Flag (ADF)</English>
+			</Key>
+			<Key ID="STR_ADF_MARKER_ADFNCUT">
+					<Original>Flag (ADF Uncut)</Original>
+					<English>Flag (ADF Uncut)</English>
+			</Key>
+			<Key ID="STR_ADF_MARKER_ADFOPFOR">
+					<Original>Flag (ADF-OPFOR)</Original>
+					<English>Flag (ADF-OPFOR)</English>
+			</Key>
+			<Key ID="STR_A3_A_CfgVehicles_Plane_Transport_01_base_F0">
+					<Original>C-130 Hercules</Original>
+					<English>C-130 Hercules</English>
+			</Key>
+			<Key ID="STR_ADF_weapon_F1_NAME">
+					<Original>F1 Fragmentation Grenade</Original>
+					<English>F1 Fragmentation Grenade</English>
+			</Key>
+		</Container>
+	</Package>
+</Project>
