@@ -1,134 +1,84 @@
-# CONTRIBUTING.md
-
 # Contributing to ADF: Re-Cut
 
-Thanks for your interest in improving ADF: Re-Cut!
+Cheers for taking an interest. ADF: Re-Cut is community-driven and we welcome help across configs, scripts, models, textures, and documentation.
 
-## What This Repository Contains
+## What you can contribute
 
-This repository contains **code and configurations only**. 3D models are not included to keep the repo lightweight and protect original creators' work.
+**Code, configs, scripts, textures** — open a PR, no permission needed (except maintainer review before merge). Bug fixes, balance tweaks, performance improvements, new features, all welcome.
 
-## What You Can Contribute
+**Models** — we're cautious here because of the licensing split. If you want to contribute a new `.p3d` (your own work, or APL-SA from another community mod), open an issue or hit @IsoBones on Discord first to discuss integration and licensing. See [ASSETS_LICENSE.md](ASSETS_LICENSE.md) and [DEV_LICENSE.md](DEV_LICENSE.md).
 
-### ✅ Contributions Welcome
+**Major refactors / breaking changes** — open an issue first, let's talk through the approach before you sink time into it.
 
-- **Bug fixes** - Squash those pesky issues
-- **Config improvements** - Weapon stats, vehicle handling, faction setup
-- **Script optimizations** - Performance and functionality improvements
-- **New features** - Discuss in issues first
-- **Documentation** - Always appreciated!
-- **CI/CD improvements** - Build processes, automation
+**Documentation** — always wanted, never enough.
 
-### 🤔 Contributions Requiring Discussion
+**What you can't contribute** — modifications to the legacy protected models (they're not in this repo and they're not yours to modify), or assets ripped from other mods without proper licensing.
 
-- **New 3D models** - Contact @IsoBones first to discuss integration
-- **Major refactors** - Open an issue to discuss approach
-- **Breaking changes** - Needs careful review
+## Workflow
 
-### ❌ Cannot Contribute
-
-- Modifications to legacy developer assets (protected)
-- Assets extracted from other mods without proper licensing
-
-## How to Contribute
-
-### 1. Fork and Clone
 ```bash
-git clone https://github.com/IsoBones/ADFRecut.git
-cd ADF-Recut
+# Fork, then:
+git clone https://github.com/<you>/ADFrecut.git
+cd ADFrecut
+git checkout -b feature/your-thing    # or fix/your-thing
 ```
 
-### 2. Create a Branch
+Make your changes, test locally (see below), then:
+
 ```bash
-git checkout -b feature/your-feature-name
+git commit -m "Clear description of what changed and why"
+git push origin feature/your-thing
 ```
 
-Or for bug fixes:
-```bash
-git checkout -b fix/bug-description
-```
+Or even easier, use the GitHub Desktop application to manage your fork!
 
-### 3. Make Your Changes
+Open a PR against `main`. PRs are reviewed and merged by @IsoBones.
 
-- Follow existing code style
-- Comment complex logic
-- Test thoroughly in Arma 3
+## Testing locally
 
-### 4. Testing Your Changes
+You don't need to build the full mod to test changes. The workflow is:
 
-**Note:** This repository does not contain .p3d files. To test:
+1. **Get the mod locally.** Subscribe to [ADF: Re-Cut on the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2971219389) so Steam downloads it. Find the local install (usually under `Steam/steamapps/workshop/content/107410/2971219389`).
 
-1. Download the latest release from [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2971219389)
-2. Replace/add your modified configs/scripts
-3. Test in Arma 3
-4. Document your testing in the PR
+2. **Unpack the PBO you're modifying** using PBO Manager, PboProject, or similar. Drop the unpacked addon somewhere you can work on it.
 
-### 5. Commit and Push
-```bash
-git add .
-git commit -m "Add: clear description of changes"
-git push origin feature/your-feature-name
-```
+3. **Apply your modified files** from your branch over the unpacked addon.
 
-### 6. Open a Pull Request
+4. **Repack the addon** ('dirty' is fine — using PBO Manager / PboProject without a clean rebuild). Note: binarised models in the PBO can occasionally cause issues when repacking dirty. This is a known annoyance — work around it as best you can and flag it in the PR if relevant.
 
-- **All PRs require approval from @IsoBones before merging**
-- Describe what your PR does and why
-- Include testing steps/results
-- Reference any related issues
-- Keep PRs focused (one feature/fix per PR)
+5. **Load locally with only your modified mod and CBA_A3.** Don't load every mod you've got — isolate the test so you know what's actually being exercised.
 
-## Pull Request Guidelines
+6. **Check the RPT for errors** related to your changes. RPT location: `%LocalAppData%/Arma 3/`. Search for your addon's classnames or your edited filenames.
 
-**Your PR should include:**
-- Clear description of changes
-- Reason for the change (bug fix, enhancement, etc.)
-- Testing performed (steps, results, screenshots if relevant)
-- Any breaking changes noted
+7. **If everything looks good, commit, push, and open the PR.** Note in the PR description what you tested and what you saw.
 
-**PR Review Process:**
-1. Maintainer reviews code
-2. Discussion/changes if needed
-3. Approval and merge by @IsoBones
+If you're unsure about any of this, ask in the [Discord](https://discord.gg/sNKr7fwHUr) — it's the fastest way to get unstuck.
 
-## Code Style
+## PR guidelines
 
-- Follow existing formatting in the files you edit
-- Use clear classnames that follow the existing structure
-- Comment non-obvious code
-- Keep configs organized and readable
+A good PR description includes:
 
-## Building the Mod
+- What changed and why
+- How you tested it (steps, in-game results, RPT clean? screenshots if visual)
+- Any known issues or things you're unsure about
+- Any related GitHub issues (`Fixes #123`)
 
-**Note:** Building requires the 3D models which are not in this repository.
+Keep PRs focused — one logical change per PR. If you've fixed three unrelated bugs, that's three PRs. Easier to review, easier to revert if something's off.
 
-The maintainer handles official builds and releases. If you need to test locally:
-1. Use the Steam Workshop version as a base
-2. Apply your config/script changes
-3. Test in Arma 3
+## Code style
 
-## 3D Model Contributions
+Match the surrounding code. Existing classnames follow conventions like `adfrc_*` — use the same. Comment anything non-obvious. Don't reformat unrelated files in the same PR.
 
-**Want to contribute models?**
+## Building the full mod
 
-We're still determining the best workflow for community model contributions. In the meantime:
+Currently maintainer-only via Mikero's PboProject. HEMTT migration is on the roadmap — when that lands, contributors will be able to build locally with less friction.
 
-1. Open an issue describing what you want to create
-2. Discuss licensing and integration with @IsoBones
-3. Models will be handled separately from this code repository
+## Where to ask questions
 
-## Community
-
-- **Discord:** [Join here](https://discord.gg/sNKr7fwHUr)
-- **Issues:** Use GitHub issues for bugs and feature requests
-- **Discussions:** Use GitHub Discussions for questions and ideas
-
-## Questions?
-
-- Check existing issues and discussions first
-- Join our Discord for quick questions
-- Open a GitHub issue for bug reports or feature requests
+- **Quick questions / general chat:** [Discord](https://discord.gg/sNKr7fwHUr)
+- **Bug reports / feature requests:** [GitHub Issues](https://github.com/IsoBones/ADFrecut/issues)
+- **Security issues:** see [SECURITY.md](SECURITY.md) — don't post these in public
 
 ---
 
-**By contributing to this project, you agree your contributions will be licensed under the Arma Public License Share Alike (APL-SA).**
+By contributing, you agree your contribution is licensed under APL-SA (see [LICENSE.md](LICENSE.md)). If you're joining the core dev team and contributing protected models, you'll be asked to accept [DEV_LICENSE.md](DEV_LICENSE.md).
