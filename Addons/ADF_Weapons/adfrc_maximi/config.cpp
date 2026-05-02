@@ -1,0 +1,312 @@
+class CfgPatches
+{
+	class ADFRC_maximi
+	{
+		units[]={};
+		weapons[]=
+		{
+			"ADFRC_maximi",
+			"ADFRC_maximi_elcan"
+		};
+		requiredVersion=0.1;
+		requiredAddons[]=
+		{
+			"A3_Weapons_F",
+			"A3_Weapons_F_Acc",
+			"ADFRC_minimi",
+			"ADFRC_accessories"
+		};
+	};
+};
+class Mode_SemiAuto;
+class Mode_FullAuto;
+class ItemCore;
+class SlotInfo;
+class CowsSlot;
+class PointerSlot;
+class CowsSlot_ADFRC;
+//////////////////////////////////class asdg_SlotInfo;
+class asdg_FrontSideRail;
+class asdg_OpticRail;
+class asdg_OpticRail1913;
+class asdg_OpticRail1913_short;
+class asdg_OpticRail1913_long;
+class asdg_MuzzleSlot;
+class asdg_MuzzleSlot_762: asdg_MuzzleSlot {};
+class asdg_MuzzleSlot_556: asdg_MuzzleSlot {};
+class asdg_UnderSlot;
+class CfgWeapons
+{
+	class ADFRC_minimi_BASE;
+	class ADFRC_maximi: ADFRC_minimi_BASE
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi.p3d";
+		displayName="F89 Maximi";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_CA.paa";
+		ace_overheating_mrbs = 2500; //Mean Rounds Between Stoppages (this will be scaled based on the barrel temp)
+        ace_overheating_slowdownFactor = 1; //Slowdown Factor, reduces the velocity of the projectile (this will be scaled based on the barrel temp)
+        ace_overheating_allowSwapBarrel = 1; // 1 to enable barrel swap. 0 to disable. Meant for machine guns where you can easily swap the barrel without dismantling the whole weapon.
+        ace_overheating_dispersion = 0.25; 
+		ace_overheating_closedBolt = 1; 
+		ace_overheating_barrelMass = 4;
+		ACE_barrelTwist = 177.8;
+		ACE_barrelLength = 465;
+		
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\ADF_Weapons\adfrc_maximi\anim\f89_max.rtm"
+		};
+		magazineWell[] = {"CBA_762x51_MINIMI","CBA_762x51_LINKS"};
+		magazines[]=
+		{
+			"ADFRC_100Rnd_762_Maximi_TR5"
+		};
+		soundBipodDeploy[]=
+		{
+			"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_deploy",
+			0.70794576,
+			1,
+			20
+		};
+		soundBipodFold[]=
+		{
+			"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_fold",
+			0.70794576,
+			1,
+			20
+		};
+		soundBipodDown[]=
+		{
+			"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down",
+			0.70794576,
+			1,
+			20
+		};
+		soundBipodUp[]=
+		{
+			"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up",
+			0.70794576,
+			1,
+			20
+		};
+		hasBipod=1;
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = { "StandardSound", "SilencedSound" };
+			class BaseSoundModeType { /// I am too lazy to copy this twice into both standard and silenced sounds, that is why there is a base class from which both inherit (and sound of closure stays the same no matter what muzzle accessory is used)
+                weaponSoundEffect  = "DefaultRifle";
+            };
+			class SilencedSound: BaseSoundModeType {
+			SoundSetShot[] = {"Mk200_silencerShot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
+			};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
+			};
+			reloadTime=0.092500001;
+			dispersion=0.0011;
+			recoil="recoil_auto_mk200";
+			recoilProne="recoil_auto_prone_mk200";
+			soundContinuous=0;
+			soundBurst=0;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			aiRateOfFire=1e-006;
+			showToPlayer=1;
+		};
+		class FullAutoDeployed: Mode_SemiAuto
+		{
+			sounds[] = { "StandardSound", "SilencedSound" };
+			class BaseSoundModeType { /// I am too lazy to copy this twice into both standard and silenced sounds, that is why there is a base class from which both inherit (and sound of closure stays the same no matter what muzzle accessory is used)
+                weaponSoundEffect  = "DefaultRifle";
+            };
+			class SilencedSound: BaseSoundModeType {
+			SoundSetShot[] = {"Mk200_silencerShot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
+			};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"Zafir_Shot_SoundSet","Zafir_Tail_SoundSet","Zafir_InteriorTail_SoundSet"};
+			};
+			weaponSoundEffect="DefaultRifle";
+			reloadTime=0.079999998;
+			recoil="recoil_auto_mk200";
+			recoilProne="recoil_auto_prone_mk200";
+			dispersion=0.00101;
+			soundContinuous=0;
+			burst=1;
+			autoFire=1;
+			soundBurst=0;
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			aiRateOfFire=1e-006;
+			showToPlayer=1;
+		};
+		modes[]=
+		{
+			"FullAuto",
+			"close",
+			"short",
+			"medium",
+			"far_optic1",
+			"far_optic2"
+		};
+		class close: FullAuto
+		{
+			burst=10;
+			aiRateOfFire=0.5;
+			aiRateOfFireDistance=50;
+			minRange=0;
+			minRangeProbab=0.050000001;
+			midRange=30;
+			midRangeProbab=0.69999999;
+			maxRange=50;
+			maxRangeProbab=0.039999999;
+			showToPlayer=0;
+		};
+		class short: close
+		{
+			burst=8;
+			aiRateOfFire=2;
+			aiRateOfFireDistance=300;
+			minRange=50;
+			minRangeProbab=0.050000001;
+			midRange=150;
+			midRangeProbab=0.69999999;
+			maxRange=300;
+			maxRangeProbab=0.039999999;
+		};
+		class medium: close
+		{
+			burst=5;
+			aiRateOfFire=4;
+			aiRateOfFireDistance=600;
+			minRange=200;
+			minRangeProbab=0.050000001;
+			midRange=400;
+			midRangeProbab=0.60000002;
+			maxRange=600;
+			maxRangeProbab=0.1;
+		};
+		class far_optic1: close
+		{
+			requiredOpticType=1;
+			showToPlayer=0;
+			burst=3;
+			aiRateOfFire=9;
+			aiRateOfFireDistance=900;
+			minRange=350;
+			minRangeProbab=0.039999999;
+			midRange=550;
+			midRangeProbab=0.5;
+			maxRange=700;
+			maxRangeProbab=0.0099999998;
+		};
+		class far_optic2: far_optic1
+		{
+			requiredOpticType=2;
+			autoFire=0;
+			burst=1;
+			minRange=400;
+			minRangeProbab=0.050000001;
+			midRange=800;
+			midRangeProbab=0.5;
+			maxRange=1000;
+			maxRangeProbab=0.0099999998;
+		};
+	
+		   class WeaponSlotsInfo {
+			mass = 180;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Modern: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mod.p3d";
+		displayName="F89 Maximi Modernised";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Mod_CA.paa";
+	};
+	
+	class ADFRC_maximi_Modern_Short: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_Mods.p3d";
+		displayName="F89 Maximi Modernised (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Mod_S_CA.paa";
+		ACE_barrelLength = 349;
+	
+		   class WeaponSlotsInfo {
+			mass = 165;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Para: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_para.p3d";
+		displayName="F89 Maximi Para";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Para_CA.paa";
+	
+		   class WeaponSlotsInfo {
+			mass = 155;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	class ADFRC_maximi_Para_Short: ADFRC_maximi
+	{
+		scope=2;
+		model="\ADF_Weapons\adfrc_maximi\ADFRC_F89_Maximi_paras.p3d";
+		displayName="F89 Maximi Para (Short)";
+		author="Brucey";
+		picture="\ADF_Weapons\adfrc_maximi\UI\adfrc_Maximi_Para_S_CA.paa";
+		ACE_barrelLength = 349;
+	
+		   class WeaponSlotsInfo {
+			mass = 145;
+			allowedSlots[] = {901};
+            class MuzzleSlot : asdg_MuzzleSlot_762
+            {};
+            class CowsSlot : asdg_OpticRail1913 //Top / optic slot
+            {};
+            class PointerSlot : asdg_FrontSideRail //side slot
+            {};
+        };
+	};
+	
+	
+	
+	#include "Presets.hpp"
+};
