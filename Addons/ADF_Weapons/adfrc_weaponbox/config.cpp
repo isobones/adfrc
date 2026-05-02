@@ -33,7 +33,6 @@ class Mode_FullAuto;
 class SlotInfo;
 class CowsSlot;
 class PointerSlot;
-class WeaponSlotsInfo;
 class CfgVehicleIcons
 {
 	icon_ADFRC_box="\ADF_Weapons\adfrc_weaponbox\icons\iconbox_ADFRC_ca.paa";

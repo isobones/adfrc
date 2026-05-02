@@ -1231,7 +1231,6 @@ class cfgWeapons
 	class ItemCore;
 	class HeadGearItem;
 	class UniformItem;
-	class ItemInfo;
 	class VestItem;
 	class U_B_CombatUniform_mcam;
 	class U_B_CombatUniform_mcam_vest;
