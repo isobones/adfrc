@@ -35,20 +35,7 @@ Contributors generally don't build the full mod themselves; See CONTRIBUTING.md 
 
 ## Credits
 
-Original developers:
-- IsoBones
-- Quiggs
-- Brucey
-- Index
-- exer
-- Barais
-- Tradie
-- Panther
-- Codex
-- LJFox
-- B.Conway
-
-With thanks to the original ADFU team, the Project: Uncut team, the Arma 3 Aegis/Atlas team for open-sourcing their files, Bebra Productions for the ballistic glasses models, and the community for ongoing feedback.
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for a list of credits.
 
 ## License
 
