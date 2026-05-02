@@ -22,7 +22,6 @@ class CfgVehicles
 class cfgWeapons
 {
 	class ItemCore;
-	class ItemInfo;
 	class VestItem;
 	class V_PlateCarrier1_blk;
 	class V_PlateCarrierH_CTRG;
@@ -38,15 +37,6 @@ class cfgWeapons
 		picture = "\ADF_Gear_2\adfrc_vests\data\icons\icon_DPCU_Vest_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear_2\adfrc_vests\data\adfrc_carrierLite_dpcu.paa"};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\A3\Characters_F_EPA\BLUFOR\equip_b_vest_kerry";
-			containerClass = "Supply140";
-			mass = 60;
-			armor = "5*0.8";
-			passThrough = 0.4;
-			hiddenSelections[] = {"camo"};
-		};
 	};
 	class ADFRC_plateCarrier_dpcu: V_PlateCarrierH_CTRG
 	{

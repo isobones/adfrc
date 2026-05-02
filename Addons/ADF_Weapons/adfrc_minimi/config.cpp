@@ -87,9 +87,7 @@ class CfgWeapons
 {
 	class Rifle_Base_F;
 	class Rifle_Long_Base_F: Rifle_Base_F
-	{
-		class WeaponSlotsInfo;
-	};
+	{};
 	class ADFRC_minimi_BASE: Rifle_Long_Base_F
 	{
 		scope=1;
