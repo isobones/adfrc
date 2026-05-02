@@ -37,7 +37,6 @@ class CBA_PIPItems
 class cfgWeapons
 {
 	class SlotInfo;
-	class ItemInfo;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
 	class InventoryFlashLightItem_Base_F;

@@ -330,7 +330,6 @@ class SlotInfo;
 class asdg_OpticRail1913;
 class asdg_FrontSideRail;
 class PointerSlot;
-class WeaponSlotsInfo;
 class launch_MRAWS_base_F;
 class cfgWeapons
 {
