@@ -1,0 +1,1155 @@
+class CfgPatches
+{
+	class A3_Soft_F_MRAP_01
+	{
+		addonRootClass="A3_Soft_F";
+		requiredAddons[]=
+		{
+			"A3_Soft_F"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{
+			"B_MRAP_01_F",
+			"B_MRAP_01_gmg_F",
+			"B_MRAP_01_hmg_F"
+		};
+		weapons[]={};
+	};
+};
+class DefaultEventHandlers;
+class WeaponFireGun;
+class WeaponCloudsGun;
+class WeaponFireMGun;
+class WeaponCloudsMGun;
+class RCWSOptics;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftDriver: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightDriver: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftCommander: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightCommander: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsTemplateLeftGunner: DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class VehicleSystemsTemplateRightGunner: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class CfgVehicles
+{
+	class LandVehicle;
+	class Car: LandVehicle
+	{
+		class NewTurret;
+	};
+	class Car_F: Car
+	{
+		class AnimationSources;
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class Components;
+				class ViewGunner;
+			};
+		};
+		class HitPoints
+		{
+			class HitLFWheel;
+			class HitLF2Wheel;
+			class HitRFWheel;
+			class HitRF2Wheel;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+		};
+		class CargoTurret;
+		class ViewCargo;
+	};
+	class MRAP_01_base_F: Car_F{};
+	class MRAP_01_gmg_base_F: MRAP_01_base_F{};
+	class MRAP_01_hmg_base_F: MRAP_01_gmg_base_F{};
+	class B_MRAP_01_F: MRAP_01_base_F{};
+	class B_MRAP_01_gmg_F: MRAP_01_gmg_base_F{};
+	class B_MRAP_01_hmg_F: MRAP_01_hmg_base_F{};
+	class adfrc_hawkei_base: MRAP_01_base_F
+	{
+		author="ADFRC - Quiggs";
+		mapSize=9.4200001;
+		class SpeechVariants
+		{
+			class Default
+			{
+				speechSingular[]=
+				{
+					"veh_vehicle_MRAP_s"
+				};
+				speechPlural[]=
+				{
+					"veh_vehicle_MRAP_p"
+				};
+			};
+		};
+		textSingular="$STR_A3_nameSound_veh_vehicle_MRAP_s";
+		textPlural="$STR_A3_nameSound_veh_vehicle_MRAP_p";
+		nameSound="veh_vehicle_MRAP_s";
+		_generalMacro ="adfrc_hawkei_base";
+		class Library
+		{
+			libTextDesc="$STR_A3_CfgVehicles_MRAP_01_Base_Library0";
+		};
+		model="\ADF_Mrap\adfrc_hawkei\adfrc_hawkei_4dr";
+		editorSubcategory="EdSubcat_Cars";
+		picture="\A3\Soft_F\MRAP_01\Data\UI\MRAP_01_Base_ca.paa";
+		Icon="\A3\soft_f\MRAP_01\Data\UI\map_MRAP_01_CA.paa";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Hawkei (4DR)";
+		crew = "ADFRC_rifleman_amcu";
+		typicalCargo[] = {"ADFRC_rifleman_amcu"};
+		side = 1;
+		faction = "ADF";
+		transportMaxBackpacks=5;
+		vehicleClass="Car";
+		transportSoldier=3;
+		crewVulnerable=0;
+		crewCrashProtection=1.35;
+		crewExplosionProtection=0.99989998;
+		maxFordingDepth=-0.1;
+		enableRadio=1;
+		enableGPS=1;
+		armor=225;
+		armorStructural=5;
+		cost=500000;
+		threat[]={0.1,0.1,0.1};
+		memoryPointTaskMarker="TaskMarker_1_pos";
+		slingLoadCargoMemoryPoints[]=
+		{
+			"SlingLoadCargo1",
+			"SlingLoadCargo2",
+			"SlingLoadCargo3",
+			"SlingLoadCargo4"
+		};
+		class Turrets:turrets
+		{
+			class CargoTurret_01: CargoTurret
+			{
+				showAsCargo=1;
+				isPersonTurret=1;
+				personTurretAction="vehicle_turnout_1";
+				gunnerInAction="passenger_generic01_foldhands";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				gunnerName="Hatch Gunner";
+				animationSourceHatch="mainhatch";
+				viewGunnerInExternal=1;
+				proxyType="CPGunner";
+				gunnerCompartments="Compartment1";
+				proxyIndex=1;
+				allowLauncherOut=1;
+				castGunnerShadow=1;
+				forceHideGunner=0;
+				gunnerForceOptics=-0;
+				maxElev=50;
+				minElev=-20;
+				maxTurn=120;
+				minTurn=-120;
+				initElev=0;
+				ejectDeadGunner=0;
+				usepip=0;
+				startEngine=0;
+				commanding=-0;
+				outGunnerMayFire=1;
+				inGunnerMayFire=0;
+				LODTurnedIn = 1000;
+				LODTurnedOut = 1000;
+				LODOpticsIn = 1000;
+				LODOpticsOut = 1000;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -90;
+					maxAngleX = 90;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 1;
+					minFov = 0.5;
+					maxFov = 1;
+				};
+			};
+		};
+		class Reflectors
+		{
+			class Left
+			{
+				color[]={1.9,1.8,1.7};
+				ambient[]={5,5,5};
+				position="Light_L";
+				direction="Light_L_end";
+				hitpoint="Light_L";
+				selection="Light_L";
+				size=1;
+				innerAngle=30;
+				outerAngle=179;
+				coneFadeCoef=10;
+				intensity=100;
+				useFlare=0;
+				dayLight=0;
+				flareSize=1;
+				class Attenuation
+				{
+					start=1;
+					constant=0;
+					linear=0;
+					quadratic=0.050000001;
+					hardLimitStart=50;
+					hardLimitEnd=80;
+				};
+			};
+			class Right: Left
+			{
+				position="Light_R";
+				direction="Light_R_end";
+				hitpoint="Light_R";
+				selection="Light_R";
+			};
+			class Right2: Right
+			{
+				position="light_R_flare";
+				useFlare=1;
+			};
+			class Left2: Left
+			{
+				position="light_L_flare";
+				useFlare=1;
+			};
+			class Right3: Right2
+			{
+				position="light_R_flare2";
+				flareSize=0.30000001;
+				hitpoint="Light_R2";
+				selection="Light_R2";
+			};
+			class Left3: Left2
+			{
+				position="light_L_flare2";
+				flareSize=0.30000001;
+				hitpoint="Light_L2";
+				selection="Light_L2";
+			};
+		};
+		aggregateReflectors[]=
+		{
+			
+			{
+				"Left",
+				"Right",
+				"Left2",
+				"Right2",
+				"Left3",
+				"Right3"
+			}
+		};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position="exhaust_pos";
+				direction="exhaust_dir";
+				effect="ExhaustEffectHTruck";
+			};
+		};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds_destruct.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base_destruct.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int_destruct.rvmat",
+				"A3\Data_F\Glass_veh.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_int.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat"
+			};
+		};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"riotpolice"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class HitReserveWheel
+			{
+				source="Hit";
+				hitpoint="HitReserveWheel";
+				raw=1;
+			};
+			class Door_LF
+			{
+				source="door";
+				animPeriod=0.80000001;
+			};
+			class Door_RF
+			{
+				source="door";
+				animPeriod=0.80000001;
+			};
+			class Door_LB
+			{
+				source="door";
+				animPeriod=0.80000001;
+			};
+			class Door_RB
+			{
+				source="door";
+				animPeriod=0.80000001;
+			};
+		};
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel: HitLFWheel
+			{
+				radius=0.33000001;
+				visual="wheel_1_1_damage";
+				armorComponent="wheel_1_1_hide";
+				armor=-250;
+				minimalHit=-0.016000001;
+				explosionShielding=4;
+				passThrough=0;
+			};
+			class HitLF2Wheel: HitLF2Wheel
+			{
+				radius=0.33000001;
+				visual="wheel_1_2_damage";
+				armorComponent="wheel_1_2_hide";
+				armor=-250;
+				minimalHit=-0.016000001;
+				explosionShielding=4;
+				passThrough=0;
+			};
+			class HitRFWheel: HitRFWheel
+			{
+				radius=0.33000001;
+				visual="wheel_2_1_damage";
+				armorComponent="wheel_2_1_hide";
+				armor=-250;
+				minimalHit=-0.016000001;
+				explosionShielding=4;
+				passThrough=0;
+			};
+			class HitRF2Wheel: HitRF2Wheel
+			{
+				radius=0.33000001;
+				visual="wheel_2_2_damage";
+				armorComponent="wheel_2_2_hide";
+				armor=-250;
+				minimalHit=-0.016000001;
+				explosionShielding=4;
+				passThrough=0;
+			};
+			class HitBody
+			{
+				armor=6;
+				material=-1;
+				name="karoserie";
+				visual="zbytek";
+				passThrough=1;
+				minimalHit=0.0099999998;
+				explosionShielding=1.5;
+				radius=0.44999999;
+			};
+			class HitHull
+			{
+				armor=1;
+				material=-1;
+				armorComponent="hit_hull";
+				name="hit_hull_point";
+				visual="-";
+				passThrough=0.5;
+				minimalHit=0.2;
+				explosionShielding=0.60000002;
+				radius=0.25;
+			};
+			class HitEngine
+			{
+				armor=0.5;
+				material=-1;
+				armorComponent="hit_engine";
+				name="motor";
+				visual="-";
+				passThrough=0.30000001;
+				minimalHit=0.2;
+				explosionShielding=0.2;
+				radius=0.44999999;
+			};
+			class HitFuel
+			{
+				armor=0.5;
+				material=-1;
+				armorComponent="hit_fuel";
+				name="palivo";
+				visual="-";
+				passThrough=0.5;
+				minimalHit=0.2;
+				explosionShielding=0.2;
+				radius=0.25;
+			};
+			class HitGlass1: HitGlass1
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+			class HitGlass2: HitGlass2
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+			class HitGlass3: HitGlass3
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+			class HitGlass4: HitGlass4
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+			class HitGlass5: HitGlass5
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+			class HitGlass6: HitGlass6
+			{
+				armor=1.5;
+				explosionShielding=3;
+				radius=0.25;
+			};
+		};
+		wheelDamageThreshold=0.18000001;
+		wheelDamageRadiusCoef=0.75;
+		wheelDestroyRadiusCoef=0.47999999;
+		driverAction="driver_MRAP_01";
+		cargoAction[]=
+		{
+			"passenger_MRAP_01_front",
+			"passenger_MRAP_01_back",
+			"passenger_generic01_foldhands"
+		};
+		getInAction="GetInMRAP_01";
+		getOutAction="GetOutMRAP_01";
+		cargoGetInAction[]=
+		{
+			"GetInMRAP_01_cargo"
+		};
+		cargoGetOutAction[]=
+		{
+			"GetOutMRAP_01"
+		};
+		sensorPosition="sensorPos";
+		hideWeaponsDriver=1;
+		hideWeaponsCargo=1;
+		driverDoor="";
+		cargoDoors[]={};
+		terrainCoef=1.5;
+		turnCoef=3;
+		precision=10;
+		smokeLauncherGrenadeCount=8;
+		smokeLauncherVelocity=14;
+		smokeLauncherOnTurret=0;
+		smokeLauncherAngle=360;
+		weapons[]=
+		{
+			"TruckHorn2"
+		};
+		magazines[]={};
+		class RenderTargets
+		{
+			class Driver_display
+			{
+				renderTarget="rendertarget1";
+				class CameraView1
+				{
+					pointPosition="PIP1_pos";
+					pointDirection="PIP1_dir";
+					renderVisionMode=0;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_1_TL",
+					"PIP_1_TR",
+					"PIP_1_BL",
+					"PIP_1_BR"
+				};
+			};
+			class mirrors_Left
+			{
+				renderTarget="rendertarget4";
+				class CameraView1
+				{
+					pointPosition="PIP4_pos";
+					pointDirection="PIP4_dir";
+					renderVisionMode=4;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_4_TL",
+					"PIP_4_TR",
+					"PIP_4_BL",
+					"PIP_4_BR"
+				};
+			};
+			class mirrors_Right
+			{
+				renderTarget="rendertarget5";
+				class CameraView1
+				{
+					pointPosition="PIP5_pos";
+					pointDirection="PIP5_dir";
+					renderVisionMode=4;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_5_TL",
+					"PIP_5_TR",
+					"PIP_5_BL",
+					"PIP_5_BR"
+				};
+			};
+		};
+		thrustDelay=0.1;
+		brakeIdleSpeed=1.78;
+		maxSpeed=115;
+		fuelCapacity=26;
+		wheelCircumference=3.924;
+		antiRollbarForceCoef=12;
+		antiRollbarForceLimit=10;
+		antiRollbarSpeedMin=20;
+		antiRollbarSpeedMax=50;
+		idleRpm=800;
+		redRpm=4500;
+		class complexGearbox
+		{
+			GearboxRatios[]=
+			{
+				"R1",
+				-3.1819999,
+				"N",
+				0,
+				"D1",
+				4.0,
+				"D2",
+				2.3180001,
+				"D3",
+				1.85,
+				"D4",
+				1.65,
+				"D5",
+				1.45
+			};
+			TransmissionRatios[]=
+			{
+				"High",
+				5.539
+			};
+			gearBoxMode="auto";
+			moveOffGear=1;
+			driveString="D";
+			neutralString="N";
+			reverseString="R";
+		};
+		simulation="carx";
+		dampersBumpCoef=6;
+		differentialType="all_limited";
+		frontRearSplit=0.5;
+		frontBias=1.3;
+		rearBias=1.3;
+		centreBias=1.3;
+		clutchStrength=20;
+		enginePower=220;
+		maxOmega=471;
+		peakTorque=1000;
+		dampingRateFullThrottle=0.079999998;
+		dampingRateZeroThrottleClutchEngaged=2;
+		dampingRateZeroThrottleClutchDisengaged=0.34999999;
+		torqueCurve[]=
+		{
+			{0,0},
+			{0.178,0.5},
+			{0.25,0.85000002},
+			{0.40000001,0.89999998},
+			{0.5,1},
+			{0.72500002,0.94999999},
+			{0.85000002,0.60000002},
+			{1,0.30000001}
+		};
+		changeGearMinEffectivity[]={0.94999999,0.15000001,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999};
+		switchTime=0.31;
+		latency=1;
+		class Wheels
+		{
+			class LF
+			{
+				side="left";
+				suspTravelDirection[]={-0.125,-1,0};
+				boneName="wheel_1_1";
+				steering=1;
+				center="wheel_1_1_axis";
+				boundary="wheel_1_1_bound";
+				width="0.35";
+				mass=150;
+				MOI=40;
+				dampingRate=0.1;
+				dampingRateDamaged=1;
+				dampingRateDestroyed=1000;
+				maxBrakeTorque=22500;
+				maxHandBrakeTorque=0;
+				suspForceAppPointOffset="wheel_1_1_axis";
+				tireForceAppPointOffset="wheel_1_1_axis";
+				maxCompression=0.15000001;
+				maxDroop=0.15000001;
+				sprungMass=2066;
+				springStrength=201234;
+				springDamperRate=20600.6;
+				longitudinalStiffnessPerUnitGravity=5000;
+				latStiffX=25;
+				latStiffY=180;
+				frictionVsSlipGraph[]=
+				{
+					{0,1},
+					{0.5,1},
+					{1,1}
+				};
+			};
+			class LR: LF
+			{
+				boneName="wheel_1_2";
+				steering=0;
+				center="wheel_1_2_axis";
+				boundary="wheel_1_2_bound";
+				suspForceAppPointOffset="wheel_1_2_axis";
+				tireForceAppPointOffset="wheel_1_2_axis";
+				maxHandBrakeTorque=275000;
+			};
+			class RF: LF
+			{
+				side="right";
+				suspTravelDirection[]={0.125,-1,0};
+				boneName="wheel_2_1";
+				center="wheel_2_1_axis";
+				boundary="wheel_2_1_bound";
+				suspForceAppPointOffset="wheel_2_1_axis";
+				tireForceAppPointOffset="wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName="wheel_2_2";
+				steering=0;
+				center="wheel_2_2_axis";
+				boundary="wheel_2_2_bound";
+				suspForceAppPointOffset="wheel_2_2_axis";
+				tireForceAppPointOffset="wheel_2_2_axis";
+				maxHandBrakeTorque=275000;
+			};
+		};
+		extCameraPosition[]={0,2.2,-8};
+		class Components;
+	};
+	class adfrc_hawkei_mk47: adfrc_hawkei_base
+	{
+		author="ADFRC - Quiggs";
+		_generalMacro ="adfrc_hawkei_base";
+		model="\A3\soft_f\MRAP_01\MRAP_01_gmg_F";
+		picture="\A3\Soft_F\MRAP_01\Data\UI\MRAP_01_gmg_ca.paa";
+		Icon="\A3\soft_f\MRAP_01\Data\UI\map_MRAP_01_gmg_CA.paa";
+		unitInfoType="RscUnitInfoTank";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Hawkei (MK47)";
+		crew = "ADFRC_rifleman_amcu";
+		typicalCargo[] = {"ADFRC_rifleman_amcu"};
+		side = 1;
+		faction = "ADF";
+		maxFordingDepth=-0.60000002;
+		transportSoldier=2;
+		cost=600000;
+		threat[]={0.80000001,0.60000002,0.30000001};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"camo3"
+		};
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot
+			{
+				source="ammorandom";
+				weapon="GMG_40mm";
+			};
+			class muzzle_hide
+			{
+				source="reload";
+				weapon="GMG_40mm";
+			};
+		};
+		class Components: Components
+		{
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+				};
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body="mainTurret";
+				gun="mainGun";
+				gunBeg="muzzle";
+				gunEnd="chamber";
+				weapons[]=
+				{
+					"GMG_40mm"
+				};
+				magazines[]=
+				{
+					"96Rnd_40mm_G_belt",
+					"96Rnd_40mm_G_belt"
+				};
+				soundServo[]=
+				{
+					"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01",
+					0.17782794,
+					1,
+					10
+				};
+				soundServoVertical[]=
+				{
+					"A3\Sounds_F\vehicles\soft\noises\servo_turret_MRAP01",
+					0.17782794,
+					1,
+					10
+				};
+				gunnerAction="gunner_MRAP_01";
+				viewGunnerInExternal=1;
+				castGunnerShadow=1;
+				stabilizedInAxes=3;
+				animationSourceStickX="joystick_gunner_x";
+				animationSourceStickY="joystick_gunner_y";
+				gunnerLeftHandAnimName="";
+				gunnerRightHandAnimName="joystick_gunner";
+				memoryPointGunnerOptics="PIP0_dir";
+				gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+				discreteDistanceInitIndex=2;
+				turretInfoType="RscOptics_crows";
+				usePip=1;
+				minElev=-25;
+				maxElev=60;
+				class ViewOptics: RCWSOptics
+				{
+				};
+				class ViewGunner: ViewGunner
+				{
+					initFov=0.89999998;
+					minFov=0.25;
+					maxFov=1.25;
+					initAngleX=-5;
+				};
+				class HitPoints: HitPoints
+				{
+					class HitTurret
+					{
+						armor=-250;
+						material=-1;
+						armorComponent="hit_main_turret";
+						name="hit_main_turret_point";
+						visual="otocvez";
+						passThrough=0;
+						minimalHit=0.029999999;
+						explosionShielding=0.40000001;
+						radius=0.25;
+						isTurret=1;
+					};
+					class HitGun
+					{
+						armor=-250;
+						material=-1;
+						armorComponent="hit_main_gun";
+						name="hit_main_gun_point";
+						visual="otochlaven";
+						passThrough=0;
+						minimalHit=0.029999999;
+						explosionShielding=0.2;
+						radius=0.2;
+						isGun=1;
+					};
+				};
+				gunnerDoor="";
+				class MFD
+				{
+					class MFD_1
+					{
+						topLeft="MFD_1_TL";
+						topRight="MFD_1_TR";
+						bottomLeft="MFD_1_BL";
+						borderLeft=0;
+						borderRight=0;
+						borderTop=0;
+						borderBottom=0;
+						color[]={0.83999997,0.86000001,0.83999997};
+						alpha=1;
+						enableParallax=0;
+						font="RobotoCondensedLight";
+						class Bones
+						{
+						};
+						class Draw
+						{
+							color[]={1,0,0,1};
+							alpha=0.5;
+							class Driver_Heading
+							{
+								type="text";
+								source="[x]turretworld";
+								sourceScale=1;
+								sourceLength=3;
+								scale=1;
+								align="center";
+								refreshRate=0.079999998;
+								pos[]=
+								{
+									{0.18000001,0.88999999},
+									1
+								};
+								right[]=
+								{
+									{0.25,0.88999999},
+									1
+								};
+								down[]=
+								{
+									{0.18000001,0.95999998},
+									1
+								};
+							};
+							class Range_Text
+							{
+								type="text";
+								source="static";
+								text="RANGE:";
+								scale=1;
+								sourceScale=1;
+								align="right";
+								pos[]=
+								{
+									{0.51499999,0.69},
+									1
+								};
+								right[]=
+								{
+									{0.55500001,0.69},
+									1
+								};
+								down[]=
+								{
+									{0.51499999,0.73000002},
+									1
+								};
+							};
+							class Range_Value
+							{
+								type="text";
+								source="laserDist";
+								sourceScale=1;
+								sourceLength=3;
+								scale=1;
+								align="right";
+								refreshRate=0.079999998;
+								pos[]=
+								{
+									{0.62,0.69},
+									1
+								};
+								right[]=
+								{
+									{0.66000003,0.69},
+									1
+								};
+								down[]=
+								{
+									{0.62,0.73000002},
+									1
+								};
+							};
+							class Mode_Text
+							{
+								type="text";
+								source="static";
+								text="MODE:";
+								scale=1;
+								sourceScale=1;
+								align="right";
+								pos[]=
+								{
+									{0.51499999,0.73000002},
+									1
+								};
+								right[]=
+								{
+									{0.55500001,0.73000002},
+									1
+								};
+								down[]=
+								{
+									{0.51499999,0.76999998},
+									1
+								};
+							};
+							class Mode_Value
+							{
+								type="text";
+								source="static";
+								text="TI WHOT";
+								sourceScale=1;
+								sourceLength=3;
+								scale=1;
+								align="right";
+								refreshRate=0.079999998;
+								pos[]=
+								{
+									{0.62,0.73000002},
+									1
+								};
+								right[]=
+								{
+									{0.66000003,0.73000002},
+									1
+								};
+								down[]=
+								{
+									{0.62,0.76999998},
+									1
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		class Damage
+		{
+			tex[]={};
+			mat[]=
+			{
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_adds_destruct.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_base_destruct.rvmat",
+				"A3\Data_F\Vehicles\Turret.rvmat",
+				"A3\Data_F\Vehicles\Turret_damage.rvmat",
+				"A3\Data_F\Vehicles\Turret_destruct.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int_damage.rvmat",
+				"A3\soft_f\MRAP_01\Data\MRAP_01_int_destruct.rvmat",
+				"A3\Data_F\Glass_veh.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_int.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat",
+				"A3\Data_F\Glass_veh_armored_damage.rvmat"
+			};
+		};
+		class RenderTargets
+		{
+			class Gunner_display
+			{
+				renderTarget="rendertarget0";
+				class CameraView1
+				{
+					pointPosition="PIP0_pos";
+					pointDirection="PIP0_dir";
+					renderVisionMode=2;
+					renderQuality=2;
+					fov=0.34999999;
+					turret[]={0};
+				};
+				BBoxes[]=
+				{
+					"PIP_0_TL",
+					"PIP_0_TR",
+					"PIP_0_BL",
+					"PIP_0_BR"
+				};
+			};
+			class Driver_display
+			{
+				renderTarget="rendertarget1";
+				class CameraView1
+				{
+					pointPosition="PIP1_pos";
+					pointDirection="PIP1_dir";
+					renderVisionMode=0;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_1_TL",
+					"PIP_1_TR",
+					"PIP_1_BL",
+					"PIP_1_BR"
+				};
+			};
+			class mirrors_Left
+			{
+				renderTarget="rendertarget4";
+				class CameraView1
+				{
+					pointPosition="PIP4_pos";
+					pointDirection="PIP4_dir";
+					renderVisionMode=4;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_4_TL",
+					"PIP_4_TR",
+					"PIP_4_BL",
+					"PIP_4_BR"
+				};
+			};
+			class mirrors_Right
+			{
+				renderTarget="rendertarget5";
+				class CameraView1
+				{
+					pointPosition="PIP5_pos";
+					pointDirection="PIP5_dir";
+					renderVisionMode=4;
+					renderQuality=2;
+					fov=0.69999999;
+				};
+				BBoxes[]=
+				{
+					"PIP_5_TL",
+					"PIP_5_TR",
+					"PIP_5_BL",
+					"PIP_5_BR"
+				};
+			};
+		};
+	};
+	class adfrc_hawkei_m2: adfrc_hawkei_base
+	{
+		author="ADFRC - Quiggs";
+		_generalMacro ="adfrc_hawkei_base";
+		model="\A3\soft_f\MRAP_01\MRAP_01_hmg_F";
+		picture="\A3\Soft_F\MRAP_01\Data\UI\MRAP_01_hmg_F_ca.paa";
+		Icon="\A3\soft_f\MRAP_01\Data\UI\map_MRAP_01_hmg_F_CA.paa";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Hawkei (M2QCB)";
+		crew = "ADFRC_rifleman_amcu";
+		typicalCargo[] = {"ADFRC_rifleman_amcu"};
+		side = 1;
+		faction = "ADF";
+		threat[]={0.80000001,0.30000001,0.60000002};
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot
+			{
+				source="ammorandom";
+				weapon="HMG_127";
+			};
+			class muzzle_hide
+			{
+				source="reload";
+				weapon="HMG_127";
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"HMG_127"
+				};
+				magazines[]=
+				{
+					"200Rnd_127x99_mag_Tracer_Red",
+					"200Rnd_127x99_mag_Tracer_Red"
+				};
+			};
+		};
+	};
+};	
