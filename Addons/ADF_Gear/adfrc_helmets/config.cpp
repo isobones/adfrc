@@ -12,13 +12,15 @@ class CfgPatches
 			"A3_Characters_F"
 		};
 		units[]={};
-		weapons[]={};
+		weapons[]=
+		{
+			"adfrc_opscore_marine_Snakeskin_Tan_Ct_1_Aus","adfrc_opscore_marine_Snakeskin_blk_Ct_1_Aus","adfrc_opscore_marine_Snakeskin_Tan_amp_1_Aus","adfrc_opscore_marine_Snakeskin_blk_amp_1_Aus","adfrc_opscore_marine_Snakeskin_Tan_ct_2_Aus","adfrc_opscore_marine_Snakeskin_blk_ct_2_Aus","adfrc_opscore_marine_Snakeskin_Tan_Amp_2_Aus","adfrc_opscore_marine_Snakeskin_blk_amp_2_Aus","adfrc_opscore_marine_Snakeskin_Tan_ct_3_Aus","adfrc_opscore_marine_Snakeskin_blk_ct_3_Aus","adfrc_opscore_marine_Snakeskin_Tan_Amp_3_Aus","adfrc_opscore_marine_Snakeskin_blk_amp_3_Aus","adfrc_opscore_marine_Snakeskin_Tan_ct_4_Aus","adfrc_opscore_marine_Snakeskin_blk_ct_4_Aus","adfrc_opscore_marine_Snakeskin_Tan_Amp_4_Aus","adfrc_opscore_marine_Snakeskin_blk_amp_4_Aus","adfrc_opscore_marine_Snakeskin_Tan_ct_5_Aus","adfrc_opscore_marine_Snakeskin_blk_ct_5_Aus","adfrc_opscore_marine_Snakeskin_Tan_Amp_5_Aus","adfrc_opscore_marine_Snakeskin_blk_amp_5_Aus","adfrc_opscore_marine_Snakeskin_amcu_Ct_1_Aus","adfrc_opscore_marine_Snakeskin_amcu_amp_1_Aus","adfrc_opscore_marine_Snakeskin_amcu_ct_2_Aus","adfrc_opscore_marine_Snakeskin_amcu_amp_2_Aus","adfrc_opscore_marine_Snakeskin_amcu_ct_3_Aus","adfrc_opscore_marine_Snakeskin_amcu_amp_3_Aus","adfrc_opscore_marine_Snakeskin_amcu_ct_4_Aus","adfrc_opscore_marine_Snakeskin_amcu_amp_4_Aus","adfrc_opscore_marine_Snakeskin_amcu_ct_5_Aus","adfrc_opscore_marine_Snakeskin_amcu_amp_5_Aus","adfrc_opscore_marine_amcu_1_Aus","adfrc_teamwendy_exfil_g2_cover","adfrc_boonie","adfrc_booniehat_dpcu","adfrc_booniehat_dpdu","adfrc_ECH_Desert","adfrc_ECH_Grass","adfrc_ECH_Sand","adfrc_ECH_Snake","adfrc_ECH_CamInk","adfrc_ECH_Cam","adfrc_ECH_DPCU","adfrc_ECH_DPDU","adfrc_ECH_MEDIC_Desert","adfrc_ECH_MEDIC_Grass","adfrc_ECH_MEDIC_Sand","adfrc_ECH_MEDIC_Snake","adfrc_ECH_MEDIC_CamInk","adfrc_ECH_MEDIC_Cam","adfrc_ECH_MEDIC_dpcu","adfrc_Helmet_dpcu_canv","adfrc_Helmet_dpdu_canv","adfrc_opscore_airframe_1","adfrc_opscore_airframe_2","adfrc_opscore_airframe_3","adfrc_opscore_fast_xp","ADFRC_PASGT_Tan_No_Cover","ADFRC_PASGT_Olive_No_Cover","ADFRC_PASGT_DPC","ADFRC_PASGT_DPC_Goggles","ADFRC_PASGT_DPD","ADFRC_PASGT_DPD_Goggles","ADFRC_PASGT_DPD_Middle_East","ADFRC_PASGT_DPD_Middle_East_Goggles","ADFRC_PASGT_DPD_Midpoint","ADFRC_PASGT_DPD_Midpoint_Goggles","ADFRC_PASGT_DPD_Early","ADFRC_PASGT_DPD_Early_Goggles","ADFRC_PASGT_Multicam","ADFRC_PASGT_Multicam_Goggles","ADFRC_PASGT_Tan","ADFRC_PASGT_Tan_Goggles","ADFRC_PASGT_Olive","ADFRC_PASGT_Olive_Goggles","ADFRC_Exfil","ADFRC_Exfil_Battery","ADFRC_Exfil_Helstar","ADFRC_Exfil_Cover","ADFRC_Exfil_Comtac6","ADFRC_Exfil_AMPS","ADFRC_Exfil_Comtac6_Cover_PatchLR","ADFRC_Exfil_AMPS_Cover_PatchLR","ADFRC_Exfil_Cover_Helstar","ADFRC_Exfil_Comtac6_Helstar","ADFRC_Exfil_AMPS_Helstar","ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar","ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar","ADFRC_Exfil_Helstar_Battery","ADFRC_Exfil_Cover_Battery","ADFRC_Exfil_Comtac6_Battery","ADFRC_Exfil_AMPS_Battery","ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery","ADFRC_Exfil_AMPS_Cover_PatchLR_Battery","ADFRC_Exfil_Cover_Helstar_Battery","ADFRC_Exfil_Comtac6_Helstar_Battery","ADFRC_Exfil_AMPS_Helstar_Battery","ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery","ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery","ADFRC_Exfil_Cover_Scrim","ADFRC_Exfil_Comtac6_Cover_PatchLR_Scrim","ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim","ADFRC_Exfil_Cover_Helstar_Scrim","ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Scrim","ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Scrim","ADFRC_Exfil_Cover_Battery_Scrim","ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery_Scrim","ADFRC_Exfil_AMPS_Cover_PatchLR_Battery_Scrim","ADFRC_Exfil_Cover_Helstar_Battery_Scrim","ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery_Scrim","ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery_Scrim","ADFRC_Gentex_CVC_Tan_F1","ADFRC_Gentex_CVC_Tan_F2","ADFRC_Gentex_CVC_Tan_M9","ADFRC_Gentex_CVC_Olive_F1","ADFRC_Gentex_CVC_Olive_F2","ADFRC_Gentex_CVC_Olive_M9"
+		};
 	};
 };
 class CfgWeapons
 {
 	class ItemCore;
-	class ItemInfo;
 	class UniformItem;
 	class Uniform_Base;
 	class VestItem;
@@ -1373,20 +1375,12 @@ class CfgWeapons
 	};
 
 	// ENHANCED COMBAT HELMETS MEDIC
-	class adfrc_ECH_MEDIC_Desert: adfrc_ECH_Desert
+	class adfrc_ECH_MEDIC_Desert: H_HelmetB
 	{
 		scope = 2;
 		displayName = "ECH Medic [Desert]";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Helmet_Desert_M_co.paa"};
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		class ItemInfo: ItemInfo
-		{
-			mass = 30;
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
-			armor = 3;
-			passThrough = 0.5;
-		};
 	};
 	class adfrc_ECH_MEDIC_Grass: adfrc_ECH_MEDIC_Desert
 	{
@@ -1603,7 +1597,7 @@ class CfgWeapons
 
 			hiddenSelections[]         = { "camo", "camo1", "camo2", "camo3" };
 			modelSides[]               = { 1, 3 };
-
+			allowedSlots[]			   = { 901, 605 };
 			hiddenSelectionsTextures[] = {
 				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
 				"",
@@ -1633,15 +1627,6 @@ class CfgWeapons
 			"",
 			""
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"",
-				"",
-				""
-			};
-		};
 	};
 
 	class ADFRC_PASGT_DPC : ADFRC_PASGT_Tan_No_Cover {
@@ -1654,15 +1639,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1677,15 +1653,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPC_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_DPD : ADFRC_PASGT_Tan_No_Cover {
@@ -1698,15 +1665,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1721,15 +1679,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_DPD_Middle_East : ADFRC_PASGT_Tan_No_Cover {
@@ -1742,15 +1691,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1765,15 +1705,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Middle_East_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_DPD_Midpoint : ADFRC_PASGT_Tan_No_Cover {
@@ -1786,15 +1717,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1809,15 +1731,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Midpoint_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_DPD_Early : ADFRC_PASGT_Tan_No_Cover {
@@ -1830,15 +1743,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1853,15 +1757,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_DPD_Early_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_Multicam : ADFRC_PASGT_Tan_No_Cover {
@@ -1874,15 +1769,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1897,15 +1783,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Multicam_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_Tan : ADFRC_PASGT_Tan_No_Cover {
@@ -1918,15 +1795,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
 			"",
 			""
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
-				"",
-				""
-			};
 		};
 	};
 
@@ -1941,15 +1809,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Tan_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
-		};
 	};
 
 	class ADFRC_PASGT_Olive : ADFRC_PASGT_Tan_No_Cover {
@@ -1963,15 +1822,6 @@ class CfgWeapons
 			"",
 			""
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"",
-				""
-			};
-		};
 	};
 
 	class ADFRC_PASGT_Olive_Goggles : ADFRC_PASGT_Tan_No_Cover {
@@ -1984,15 +1834,6 @@ class CfgWeapons
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
 			"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_Olive_co.paa",
-				"\ADF_Gear\adfrc_helmets\data\pasgt_glass_co.paa"
-			};
 		};
 	};
 
@@ -2054,6 +1895,8 @@ class CfgWeapons
 			mass                       = 40;
 
 			modelSides[]               = { 1, 3 };
+
+			allowedSlots[]             = { 901, 605 };
 
 			hiddenSelections[] = {
 				"camo",
@@ -2130,28 +1973,6 @@ class CfgWeapons
 			"", //? Amp Wire Up
 			""  //? Scrim
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Helstar : ADFRC_Exfil {
@@ -2177,28 +1998,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			""  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
 		};
 	};
 
@@ -2226,35 +2025,14 @@ class CfgWeapons
 			"", //? Amp Wire Up
 			""  //? Scrim
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Comtac6 : ADFRC_Exfil {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "EXFIL Rail 3.0 (No Cover, Comtac 6)";
 		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Exfil_Comtac6.paa";
-
+		ace_hearing_protection = 0.8;
+		ace_hearing_hasEHP = 1;
 		hiddenSelectionsTextures[] = {
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
 			"", //? Cover
@@ -2274,31 +2052,8 @@ class CfgWeapons
 			"", //? Amp Wire Up
 			""  //? Scrim
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
-		ace_hearing_protection = 0.8;
-		ace_hearing_hasEHP = 1;
+
 	class ADFRC_Exfil_AMPS : ADFRC_Exfil {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "EXFIL Rail 3.0 (No Cover, AMPS)";
@@ -2325,27 +2080,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Comtac6_Cover_PatchLR : ADFRC_Exfil {
@@ -2374,27 +2108,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR : ADFRC_Exfil {
@@ -2423,27 +2136,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Helstar : ADFRC_Exfil {
@@ -2469,28 +2161,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			""  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
 		};
 	};
 
@@ -2520,27 +2190,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Helstar : ADFRC_Exfil {
@@ -2569,27 +2218,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar : ADFRC_Exfil {
@@ -2618,27 +2246,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar : ADFRC_Exfil {
@@ -2667,27 +2274,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Helstar_Battery : ADFRC_Exfil {
@@ -2714,28 +2300,6 @@ class CfgWeapons
 			"", //? Amp Wire Up
 			""  //? Scrim
 		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Battery : ADFRC_Exfil {
@@ -2761,28 +2325,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			""  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
 		};
 	};
 
@@ -2812,27 +2354,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Battery : ADFRC_Exfil {
@@ -2861,27 +2382,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Battery : ADFRC_Exfil {
@@ -2910,27 +2410,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery : ADFRC_Exfil {
@@ -2959,27 +2438,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Helstar_Battery : ADFRC_Exfil {
@@ -3005,28 +2463,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			""  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
 		};
 	};
 
@@ -3056,27 +2492,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Helstar_Battery : ADFRC_Exfil {
@@ -3105,27 +2520,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Comtac6_Cover_PatchLR_Helstar_Battery : ADFRC_Exfil {
@@ -3154,27 +2548,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery : ADFRC_Exfil {
@@ -3203,27 +2576,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				""  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Scrim : ADFRC_Exfil {
@@ -3249,28 +2601,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
 		};
 	};
 
@@ -3300,27 +2630,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Scrim : ADFRC_Exfil {
@@ -3349,27 +2658,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Helstar_Scrim : ADFRC_Exfil {
@@ -3395,28 +2683,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
 		};
 	};
 
@@ -3446,27 +2712,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Scrim : ADFRC_Exfil {
@@ -3495,27 +2740,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Battery_Scrim : ADFRC_Exfil {
@@ -3541,28 +2765,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
 		};
 	};
 
@@ -3592,27 +2794,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Battery_Scrim : ADFRC_Exfil {
@@ -3641,27 +2822,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_Cover_Helstar_Battery_Scrim : ADFRC_Exfil {
@@ -3687,28 +2847,6 @@ class CfgWeapons
 			"", //? Amp Wire Down
 			"", //? Amp Wire Up
 			"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-		};
-
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"", //? Patch Left
-				"", //? Patch Right
-				"", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
 		};
 	};
 
@@ -3738,27 +2876,6 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_comtac_6_co.paa", //? Comtac 6
-				"", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	class ADFRC_Exfil_AMPS_Cover_PatchLR_Helstar_Battery_Scrim : ADFRC_Exfil {
@@ -3787,119 +2904,99 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_co.paa", //? Camo
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_cover_co.paa", //? Cover
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_rails_co.paa", //? Rails
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_helstar_ca.paa", //? Helstar
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_battery_pack_co.paa", //? Battery Pack
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_left_co.paa", //? Patch Left
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_patch_right_co.paa", //? Patch Right
-				"", //? Comtac 6
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_arms_co.paa", //? Amp Arms Down
-				"", //? Amp Arms Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_mic_co.paa", //? Amp Mic Down
-				"", //? Amp Mic Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_amp_cups_co.paa", //? Amp Cups Down
-				"", //? Amp Cups Up
-				"#(rgb,8,8,3)color(0.062745,0.062745,0.062745,1)", //? Amp Wire Down
-				"", //? Amp Wire Up
-				"\ADF_Gear\adfrc_helmets\data\teamwendy_scrim_co.paa"  //? Scrim
-			};
-		};
 	};
 
 	//?
 	//? Gentex CVC
 	//?
 
-	class ADFRC_Gentex_CVC_Tan_F1 : ItemCore {
-		author                     = "$STR_ADF_AUTHOR";
-		displayName                = "Gentex CVC F1 (Tan)";
-		model                      = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
-		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F1.paa";
-
-		scope                      = 2;
-
-		hiddenSelections[]         = { "camo" };
-
-		hiddenSelectionsTextures[] = {
-			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-		};
+	class ADFRC_Gentex_CVC_Tan_F1: ItemCore
+	{
+		author = "$STR_ADF_AUTHOR";
+		displayName = "Gentex CVC F1 (Tan)";
+		model = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+		picture = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F1.paa";
+		scope = 2;
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : HeadgearItem {
-			uniformModel               = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
-
-			mass                       = 20;
-
-			hiddenSelections[]         = { "camo" };
-			modelSides[]               = { 1, 3 };
-
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-			};
-
-			class HitpointsProtectionInfo {
-				class Head {
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+			mass = 20;
+			hiddenSelections[] = {"camo"};
+			modelSides[] = {1,3};
+			hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
 					hitpointName = "HitHead";
-
-					armor        = 2;
-					passThrough  = 0.85;
+					armor = 2;
+					passThrough = 0.85;
 				};
 			};
 		};
 	};
-
-	class ADFRC_Gentex_CVC_Tan_F2 : ADFRC_Gentex_CVC_Tan_F1 {
-		author                     = "$STR_ADF_AUTHOR";
-		displayName                = "Gentex CVC F2 (Tan)";
-		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F2.paa";
-
-		hiddenSelectionsTextures[] = {
-			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-		};
+	class ADFRC_Gentex_CVC_Tan_F2: ItemCore
+	{
+		scope = 2;
+		author = "$STR_ADF_AUTHOR";
+		displayName = "Gentex CVC F2 (Tan)";
+		model = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+		picture = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_F2.paa";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-			};
-
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
-					armor        = 4;
-					passThrough  = 0.6;
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+			mass = 25;
+			hiddenSelections[] = {"camo"};
+			hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
+			modelSides[] = {1,3};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 4;
+					passThrough = 0.6;
 				};
 			};
 		};
 	};
-
-	class ADFRC_Gentex_CVC_Tan_M9 : ADFRC_Gentex_CVC_Tan_F1 {
-		author                     = "$STR_ADF_AUTHOR";
-		displayName                = "Gentex CVC M9 (Tan)";
-		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_M9.paa";
-
-		hiddenSelectionsTextures[] = {
-			"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-		};
+	class ADFRC_Gentex_CVC_Tan_M9: ItemCore
+	{
+		scope = 2;
+		author = "$STR_ADF_AUTHOR";
+		displayName = "Gentex CVC M9 (Tan)";
+		model = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+		picture = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Tan_M9.paa";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"
-			};
-
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
-					armor        = 6;
-					passThrough  = 0.4;
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel = "\ADF_Gear\adfrc_helmets\adfrc_gentex_cvc.p3d";
+			mass = 30;
+			hiddenSelections[] = {"camo"};
+			hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\gentex_cvc_tan_co.paa"};
+			modelSides[] = {1,3};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitPointName = "HitHead";
+					armor = 6;
+					passThrough = 0.4;
 				};
 			};
 		};
 	};
-
 	class ADFRC_Gentex_CVC_Olive_F1 : ADFRC_Gentex_CVC_Tan_F1 {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "Gentex CVC F1 (Olive)";
@@ -3910,21 +3007,9 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
-			};
-
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
-					armor        = 2;
-					passThrough  = 0.85;
-				};
-			};
-		};
 	};
 
-	class ADFRC_Gentex_CVC_Olive_F2 : ADFRC_Gentex_CVC_Olive_F1 {
+	class ADFRC_Gentex_CVC_Olive_F2 : ADFRC_Gentex_CVC_Tan_F2 {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "Gentex CVC F2 (Olive)";
 		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Olive_F2.paa";
@@ -3934,21 +3019,9 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
-			};
-
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
-					armor        = 4;
-					passThrough  = 0.6;
-				};
-			};
-		};
 	};
 
-	class ADFRC_Gentex_CVC_Olive_M9 : ADFRC_Gentex_CVC_Olive_F1 {
+	class ADFRC_Gentex_CVC_Olive_M9 : ADFRC_Gentex_CVC_Tan_M9 {
 		author                     = "$STR_ADF_AUTHOR";
 		displayName                = "Gentex CVC M9 (Olive)";
 		picture                    = "\ADF_Gear\adfrc_helmets\icons\ADFRC_Gentex_CVC_Olive_M9.paa";
@@ -3958,17 +3031,5 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 0.8;
 		ace_hearing_hasEHP = 1;
-		class ItemInfo : ItemInfo {
-			hiddenSelectionsTextures[] = {
-				"\ADF_Gear\adfrc_helmets\data\gentex_cvc_olive_co.paa"
-			};
-
-			class HitpointsProtectionInfo : HitpointsProtectionInfo {
-				class Head : Head {
-					armor        = 6;
-					passThrough  = 0.4;
-				};
-			};
-		};
 	};
 };

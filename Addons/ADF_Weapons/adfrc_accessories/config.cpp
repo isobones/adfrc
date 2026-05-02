@@ -8,7 +8,6 @@ class CfgPatches
 		requiredAddons[] = {"ADF_Core"};
 	};
 };
-class ItemInfo;
 class SlotInfo;
 class PointerSlot;
 
@@ -17,9 +16,7 @@ class PointerSlot;
 
 class CfgWeapons
 {
-	class WeaponSlotsInfo;
 	class SlotInfo;
-	class ItemInfo;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
 	class InventoryFlashLightItem_Base_F;

@@ -51,16 +51,13 @@ class CfgWeapons
 	class UGL_F;
 	class Binocular;
 	class Pistol;
-	class WeaponSlotsInfo;
 	class SlotInfo;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
 	class InventoryFlashLightItem_Base_F;
 	class InventoryMuzzleItem_Base_F;
 	class Rifle_Base_F: Rifle
-	{
-		class WeaponSlotsInfo;
-	};
+	{};
 	class ADFRC_F88SA1_base: Rifle_Base_F
 	{
 		scope=0;
