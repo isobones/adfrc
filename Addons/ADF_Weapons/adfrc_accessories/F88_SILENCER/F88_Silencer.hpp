@@ -6,7 +6,7 @@ class ADFRC_f88_muzzle_snds: muzzle_snds_M
 		model="\ADF_Weapons\adfrc_accessories\F88_SILENCER\F88_SILENCER_M";
 		descriptionShort="145mm ASE CQBS-BL";
 		author="$STR_ADF_AUTHOR";
-		class ItemInfo: ItemInfo
+		class ItemInfo: InventoryMuzzleItem_Base_F
 		{
 			mass=5;
 			class MagazineCoef
@@ -25,6 +25,7 @@ class ADFRC_f88_muzzle_snds: muzzle_snds_M
 				airFriction=1;
 			};
 			muzzleEnd="zaslehPoint";
+			alternativeFire = "Zasleh2";
 			class MuzzleCoef
 			{
 				dispersionCoef="1.0f";

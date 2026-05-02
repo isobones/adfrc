@@ -999,7 +999,6 @@ class cfgWeapons
 	class ItemCore;
 	class HeadGearItem;
 	class UniformItem;
-	class ItemInfo;
 	class Uniform_Base;
 	class Vest_Camo_Base;
 	class VestItem;
