@@ -96,12 +96,7 @@ class ADFRC_Specter_RAR : ItemCore
 	};
 	
 class ADFRC_Specter_RAR_pip: ADFRC_Specter_RAR
-	{
-		class ItemInfo: ItemInfo
-		{
-			modelOptics = "\x\cba\addons\optics\cba_optic_small_pip.p3d";
-		};
-	};
+	{};
 		
 class ADFRC_Specter_RAR_KF : ADFRC_Specter_RAR
 	{

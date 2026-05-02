@@ -21,11 +21,7 @@ class CfgWeapons
 	class VestItem;
 	class NVGoggles;
 	class InventoryItem_Base_F;
-	class HeadgearItem: InventoryItem_Base_F
-	{
-		class ItemInfo;
-		class HeadgearItem;
-	};
+	class HeadgearItem;
 class adfrc_l3h_psq36: NVGoggles
 	{
 		author = "ADF Recut";

@@ -48,9 +48,7 @@ class CfgWeapons
 	class ItemCore;
 	class Rifle_Base_F;
 	class Rifle_Long_Base_F: Rifle_Base_F
-	{
-		class WeaponSlotsInfo;
-	};
+	{};
 	class adfrc_mag58: Rifle_Long_Base_F
 	{
 		scope=2;
