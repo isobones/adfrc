@@ -12,9 +12,8 @@ For the licensing categories these models fall into, see [ASSETS_LICENSE.md](ASS
 
 | Model / file | Source mod | Original author(s) | Notes |
 |--------------|-----------|--------------------|-------|
-| _e.g. ballistic glasses_ | _Bebra Productions_ | _TBC_ | _used with permission / per APL-SA_ |
-
-> **Maintainer:** populate this table from the existing repo. Anything you can't trace the origin of needs to be flagged before next release.
+| NPP Kondor Ballistic Glasses | _[Bebra Productions - NPP KlASS Kondor](https://steamcommunity.com/sharedfiles/filedetails/?id=2976880521)_ | _Bebra Productions_ | _used per their description_ |
+|AH-64E Apache & C-130 Hercules | _[Arma 3 Aegis/Atlas](https://github.com/senicluxus/A3_Aegis_Public_Releases)_ | Aegis Team | _used per APL-SA_ |
 
 ---
 
