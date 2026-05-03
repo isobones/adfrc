@@ -852,7 +852,7 @@ class CfgVehicles
 				//--- Optional properties
 				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
 				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
-				condition = "object"; // Condition for attribute to appear (see the table below)
+				condition = "_this isKindOf 'ADFRC_ASLAV_base_F'"; // Condition for attribute to appear (see the table below)
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 			};
 		};
