@@ -600,16 +600,16 @@ class CfgVehicles
 						};
 						magazines[]=
 						{
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
-							"200rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
 							"SmokeLauncherMag"
 						};
 						soundServo[]=
