@@ -15,7 +15,9 @@ class CfgPatches
 		units[]=
 		{
 			"adfrc_abrams",
-			"adfrc_m1a1aim"
+			"adfrc_m1a1aim_md",
+			"adfrc_m1a1aim_gwot",
+			"adfrc_m1a2sepv3_md",
 		};
 		weapons[]=
 		{
@@ -27,9 +29,12 @@ class CfgPatches
 		};
 		magazines[]=
 		{
-			"ADFRC_abrams_1000Rnd_762x51_Tracer",
-			"ADFRC_abrams_200Rnd_762x51_Tracer",
-			"ADFRC_abrams_100rnd_762x51_Tracer",
+			"adfrc_abrams_1000Rnd_762x51_Tracer",
+			"adfrc_abrams_200Rnd_762x51_Tracer",
+			"adfrc_abrams_1Rnd_M829A2_shell",
+			"adfrc_abrams_1Rnd_M830A1_shell",
+			"adfrc_abrams_1Rnd_M908_shell",
+			"adfrc_abrams_1Rnd_M1028_shell",
 		};
 	};
 };
@@ -398,21 +403,21 @@ class CfgVehicles
 		};
 		class ViewPilot: ViewPilot
 		{
-			initAngleX=-3;
+			initAngleX=0;
 			initAngleY=0;
-			initFov=0.89999998;
+			initFov=0.95;
 			minFov=0.25;
 			maxFov=1.25;
 			minAngleX=-65;
 			maxAngleX=85;
 			minAngleY=-150;
 			maxAngleY=150;
-			minMoveX=-0.01;
-			maxMoveX=0.01;
-			minMoveY=-0.01;
-			maxMoveY=0.01;
-			minMoveZ=-0.01;
-			maxMoveZ=0.01;
+			minMoveX=-0.075;
+			maxMoveX=0.075;
+			minMoveY=-0.075;
+			maxMoveY=0.015;
+			minMoveZ=-0.075;
+			maxMoveZ=0.075;
 		};
 		class Reflectors
 		{
@@ -595,16 +600,16 @@ class CfgVehicles
 						};
 						magazines[]=
 						{
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
 							"SmokeLauncherMag"
 						};
 						soundServo[]=
@@ -832,9 +837,48 @@ class CfgVehicles
 				};
 				magazines[]=
 				{
-					"20Rnd_120mm_APFSDS_shells_Tracer_Red",
-					"12Rnd_120mm_HE_shells_Tracer_Red",
-					"12Rnd_120mm_HEAT_MP_T_Red",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M829A2_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M830A1_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M908_shell",
+					"adfrc_abrams_1Rnd_M1028_shell",
+					"adfrc_abrams_1Rnd_M1028_shell",
+					"adfrc_abrams_1Rnd_M1028_shell",
+					"adfrc_abrams_1Rnd_M1028_shell",
+					"adfrc_abrams_1Rnd_M1028_shell",
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
@@ -850,7 +894,7 @@ class CfgVehicles
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
 					"ADFRC_abrams_200Rnd_762x51_Tracer",
-					"ADFRC_abrams_200Rnd_762x51_Tracer"
+					"ADFRC_abrams_200Rnd_762x51_Tracer",
 				};
 				soundServo[]=
 				{
@@ -1089,19 +1133,19 @@ class CfgVehicles
 				magazines[]=
 				{
 					
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer",
-					"ADFRC_abrams_100rnd_762x51_Tracer"
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer",
+					"ADFRC_abrams_200rnd_762x51_Tracer"
 				};
 				soundServo[]=
 				{
@@ -3097,16 +3141,16 @@ class CfgVehicles
 						};
 						magazines[]=
 						{
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
-							"100Rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
+							"100rnd_127x99_mag_Tracer_Red",
 							"Laserbatteries",
 							"SmokeLauncherMag"
 						};
