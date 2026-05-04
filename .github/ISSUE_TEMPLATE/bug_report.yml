@@ -29,14 +29,13 @@ body:
         1. Spawn a Bushmaster
         2. Add cargo via Zeus
         3. Observe textures disappearing
-    validations:
-      required: true
   
   - type: dropdown
     id: gamemode
     attributes:
       label: Game Mode
-      description: Where did this occur?
+      description: Where did this occur? (Hold Ctrl/Cmd to select multiple)
+      multiple: true
       options:
         - Single Player
         - Multiplayer (Local-host)
@@ -57,7 +56,6 @@ body:
         - ACE
         - CUP
         - RHSUSAF
-      render: markdown
   
   - type: textarea
     id: logs
