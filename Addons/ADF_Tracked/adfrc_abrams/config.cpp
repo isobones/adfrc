@@ -1868,7 +1868,7 @@ class CfgVehicles
 		{
 			class maingun_recoil
 			{
-				source="reload";
+				source="reloadMagazine";
 				weapon="ADFRC_abrams_M256";
 			};
 			class zasleh_rot
@@ -1878,7 +1878,7 @@ class CfgVehicles
 			};
 			class zasleh_hide
 			{
-				source="reload";
+				source="reloadMagazine";
 				weapon="ADFRC_abrams_M256";
 			};
 			class zasleh_1_rot
@@ -3079,7 +3079,7 @@ class CfgVehicles
 	};
 	class adfrc_m1a1aim_md: adfrc_abrams
 	{
-		displayName="M1A1-AIM";
+		displayName="M1A1AIM";
 		author="ADFRC - Quiggs";
 		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a1aim.jpg";
 		model="ADF_Tracked\adfrc_abrams\adfrc_m1a1aim.p3d";
@@ -3097,9 +3097,9 @@ class CfgVehicles
 		faction="ADFRC_F_GWOT";
 		crew="ADFRC_crewman_dpcu";
 	};
-	class adfrc_m1a2sepv3_md: adfrc_m1a1aim_md
+	class adfrc_m1a2sepv3_md: adfrc_abrams
 	{
-		displayName="M1A2-SEPV3";
+		displayName="M1A2SEPv3";
 		author="ADFRC - Quiggs";
 		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a1aim.jpg";
 		model="ADF_Tracked\adfrc_abrams\adfrc_m1a2sepv3.p3d";
@@ -3107,6 +3107,9 @@ class CfgVehicles
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a2tusk_CA.paa";
 		side=1;
 		scope=2;
+		faction="ADFRC_F_MD";
+		vehicleClass="Armored";
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
 		typicalCargo[]={};
 		class ViewOptics: ViewOptics
 		{
