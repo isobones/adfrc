@@ -12,7 +12,32 @@ Cheers for taking an interest. ADF: Re-Cut is community-driven and we welcome he
 
 **Documentation** — always wanted, never enough.
 
-**What you can't contribute** — modifications to the legacy protected models (they're not in this repo and they're not yours to modify), or assets ripped from other mods without proper licensing.
+**What you can't contribute** - modifications to the legacy protected models (they're not in this repo and they're not yours to modify), or assets ripped from other mods without proper licensing.
+
+## Git LFS
+
+This repo uses Git LFS for `.paa` texture files to keep clones lean.
+
+Install Git LFS before cloning:
+​```bash
+git lfs install
+​```
+
+Most modern Git installs include LFS already. If not:
+- **Windows:** included with recent Git for Windows, or `winget install GitHub.GitLFS`
+- **macOS:** `brew install git-lfs`
+- **Linux:** `apt install git-lfs` (or your distro equivalent)
+
+If you cloned before installing LFS and see tiny text files where textures should be, run:
+
+​```bash
+git lfs install
+git lfs pull
+​```
+
+GitHub Desktop handles LFS automatically, no extra setup needed beyond having git-lfs installed on your system.
+
+
 
 ## Workflow
 
@@ -30,7 +55,7 @@ git commit -m "Clear description of what changed and why"
 git push origin feature/your-thing
 ```
 
-Or even easier, use the GitHub Desktop application to manage your fork!
+**Or even easier, use the GitHub Desktop application to manage your fork!**
 
 Open a PR against `main`. PRs are reviewed and merged by @IsoBones.
 
