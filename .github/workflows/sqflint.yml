@@ -1,0 +1,25 @@
+name: SQF Lint
+
+on:
+  push:
+    branches:
+    - main
+    paths:
+      - '**.sqf'
+      - '.github/workflows/sqflint.yml'
+  pull_request:
+    paths:
+      - '**.sqf'
+
+jobs:
+  sqflint:
+    name: Lint SQF files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run SQFLint
+        uses: arma-actions/sqflint@master
+        with:
+          options: '--directory .'
