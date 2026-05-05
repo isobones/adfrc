@@ -2,8 +2,7 @@ name: SQF Lint
 
 on:
   push:
-    branches:
-    - main
+    branches: [main]
     paths:
       - '**.sqf'
       - '.github/workflows/sqflint.yml'
@@ -18,8 +17,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Run SQFLint
         uses: arma-actions/sqflint@master
         with:
-          options: '--directory Addons --recursive'
+          args: --exit e --directory Addons --recursive
