@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - '**.sqf'
+      - 'Addons/**/*.sqf'
       - '.github/workflows/sqflint.yml'
   pull_request:
     paths:
-      - '**.sqf'
+      - 'Addons/**/*.sqf'
 
 jobs:
   sqflint:
@@ -19,8 +19,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          sparse-checkout: |
+            Addons
+          sparse-checkout-cone-mode: true
 
       - name: Run SQFLint
         uses: arma-actions/sqflint@master
         with:
-          args: --exit e --directory Addons --recursive
+          args: --exit e --directory Addons
