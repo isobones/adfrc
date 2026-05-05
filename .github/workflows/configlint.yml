@@ -1,0 +1,38 @@
+name: Config Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Addons/**/*.cpp'
+      - 'Addons/**/*.hpp'
+      - 'Addons/**/*.cfg'
+      - '.github/workflows/configlint.yml'
+      - 'tools/arma_lint.py'
+  pull_request:
+    paths:
+      - 'Addons/**/*.cpp'
+      - 'Addons/**/*.hpp'
+      - 'Addons/**/*.cfg'
+      - 'tools/arma_lint.py'
+
+jobs:
+  configlint:
+    name: Lint config files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # The linter is a single stdlib-only Python script.
+      # Errors fail the job. Warnings don't (drop --no-warnings if you want them visible).
+      # Pass --warnings-as-errors here once the existing warnings are cleaned up.
+      - name: Run arma_lint
+        run: python3 tools/arma_lint.py Addons --no-warnings
