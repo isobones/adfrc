@@ -22,4 +22,4 @@ jobs:
       - name: Run SQFLint
         uses: arma-actions/sqflint@master
         with:
-          options: '--directory .'
+          options: '--directory . --recursive''
