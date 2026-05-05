@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class ADF_Core
 	{
-		requiredAddons[] = {"A3_Data_F","cba_jr"};
+		requiredAddons[] = {"A3_Data_F","cba_jr","cba_settings"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -19,3 +19,4 @@ class CfgPatches
 #include "cfgVehicleClasses.hpp"
 #include "cfgVehicles.hpp"
 #include "sensors.hpp"
+#include "cbaSettings.hpp"
