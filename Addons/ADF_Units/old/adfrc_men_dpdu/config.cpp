@@ -49,7 +49,7 @@ class CfgEditorSubcategories
 {
 	class ADFRC_MEN_DPDU // Category class, you point to it in editorSubcategory property
 	{
-		displayName =$STR_ADF_MEN_DPDU; // Name visible in the list
+		displayName ="$STR_ADF_MEN_DPDU"; // Name visible in the list
 	};
 };
 class cfgVehicles
@@ -61,8 +61,8 @@ class cfgVehicles
 		scope=1;
 		_generalMacro="ADFRC_uniform_dpdu_Base";
 		faction="ADF";
-		editorSubcategory=$STR_ADF_MEN_DPDU;
-		vehicleClass=$STR_ADF_MEN_DPDU;
+		editorSubcategory="$STR_ADF_MEN_DPDU";
+		vehicleClass="$STR_ADF_MEN_DPDU";
 		author="$STR_ADF_AUTHOR";
 		genericNames="NATOMen";
 		nakedUniform="U_BasicBody";
