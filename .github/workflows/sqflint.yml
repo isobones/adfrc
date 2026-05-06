@@ -6,9 +6,11 @@ on:
     paths:
       - 'Addons/**/*.sqf'
       - '.github/workflows/sqflint.yml'
+      - 'tools/sqf_lint.py'
   pull_request:
     paths:
       - 'Addons/**/*.sqf'
+      - 'tools/sqf_lint.py'
 
 jobs:
   sqflint:
@@ -19,11 +21,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          sparse-checkout: |
-            Addons
-          sparse-checkout-cone-mode: true
 
-      - name: Run SQFLint
-        uses: arma-actions/sqflint@master
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          args: --exit e --directory Addons
+          python-version: '3.11'
+
+      # The linter is a single stdlib-only Python script. No pip install,
+      # no docker, no rust toolchain.
+      #
+      # Errors fail the job. Warnings don't (drop --no-warnings if you want
+      # them visible in CI). Once existing warnings are cleaned up, swap
+      # --no-warnings for -W to also block on warnings.
+      - name: Run sqf_lint
+        run: python3 tools/sqf_lint.py Addons --no-warnings
