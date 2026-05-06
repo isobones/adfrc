@@ -824,8 +824,5 @@ class CfgVehicles
 		#include "sounds.hpp"
 		
     };
-
-    /* Factions */
-    #include "cfgBLUFOR.hpp"    // BAF
 };
 #include "cfgWeapons.hpp"
