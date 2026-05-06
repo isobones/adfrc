@@ -56,7 +56,6 @@ body:
         - Examples from other mods
         - Real-world information
         - Videos or documentation
-      render: markdown
   
   - type: textarea
     id: implementation
