@@ -3,7 +3,7 @@ class CfgPatches
 	class adfrc_helmets
 	{
 		name="ADF Re-Cut Headgear";
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		requiredAddons[]=
         	{
 			"A3_Characters_F_BLUFOR",
@@ -1144,7 +1144,7 @@ class CfgWeapons
 	class adfrc_booniehat_amc: H_Booniehat_tan
 	{
 		scope = 1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName = "Boonie [AMC] DEPRECATED";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ADF_Gear\adfrc_helmets\data\Boonie_Cam_co.paa"};
@@ -1152,7 +1152,7 @@ class CfgWeapons
 	class adfrc_booniehat_dpcu: H_Booniehat_tan
 	{
 		scope=2;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Boonie [DPCU]";
 		model="\A3\Characters_F\common\booniehat";
 		hiddenSelections[] = {"camo"};
