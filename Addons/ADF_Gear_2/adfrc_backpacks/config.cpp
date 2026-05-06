@@ -446,7 +446,7 @@ class CfgVehicles{
 	class ADFRC_AssaultPack_TL_dpcu: B_AssaultPack_blk
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Assault Pack [DPCU]";
 		hiddenSelectionsTextures[]=
 		{
@@ -489,7 +489,7 @@ class CfgVehicles{
 	class ADFRC_Carryall_LSW_dpcu: B_Carryall_Base
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall LSW (DPCU)";
 		hiddenSelectionsTextures[]=
 		{
@@ -515,7 +515,7 @@ class CfgVehicles{
 	class ADFRC_Carryall_MG_dpcu: B_Carryall_Base
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall MG (DPCU)";
 		hiddenSelectionsTextures[]=
 		{
@@ -541,7 +541,7 @@ class CfgVehicles{
 	class adfrc_CarryAll_dpcu_diver: adfrc_CarryAll_dpcu
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Diver Carryall (DPCU)";
 		hiddenSelectionsTextures[]=
 		{
@@ -574,7 +574,7 @@ class CfgVehicles{
 	class adfrc_CarryAll_dpcu_engineer: B_Carryall_Base
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall Engineer (Army)";
 		hiddenSelectionsTextures[]=
 		{
@@ -607,7 +607,7 @@ class CfgVehicles{
 	class adfrc_CarryAll_dpcu_at: B_Carryall_Base
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall AT (DPCU)";
 		hiddenSelectionsTextures[]=
 		{
@@ -638,7 +638,7 @@ class CfgVehicles{
 	class ADFRC_Carryall_gl_dpcu: B_Carryall_Base
 	{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="ADF Carryall GL (Army)";
 		hiddenSelectionsTextures[]=
 		{
@@ -684,7 +684,7 @@ class CfgVehicles{
 // CUSTOM DPDU BACKPACKS
 	class ADFRC_kitbag_2cdo: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag (2nd Commandos)";
 		class TransportItems
@@ -698,7 +698,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_GL: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag GL (2nd Commandos)";
 		class TransportItems
@@ -735,7 +735,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_MG: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag MG (2nd Commandos)";
 		class TransportItems
@@ -757,7 +757,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_HMG: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag HMG (2nd Commandos)";
 		class TransportItems
@@ -779,7 +779,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_at: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag AT (2nd Commandos)";
 		class TransportItems
@@ -806,7 +806,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_exp: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag Breacher (2nd Commandos)";
 		class TransportItems
@@ -833,7 +833,7 @@ class CfgVehicles{
 	};
 	class ADFRC_kitbag_tan_eng: ADFRC_kitbag_tan
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="ADF Kitbag Engineer (2nd Commandos)";
 		class TransportItems
@@ -865,7 +865,7 @@ class CfgVehicles{
 	};
 	class ADFRC_carryall_dpdu_engineer: B_Carryall_Base
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="Engineer Ruck (DPDU)";
 		hiddenSelectionsTextures[]=
@@ -898,7 +898,7 @@ class CfgVehicles{
 	};
 	class ADFRC_carryall_dpdu_at: B_Carryall_Base
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="Anti-Tank Rucksack (DPDU)";
 		hiddenSelectionsTextures[]=
