@@ -49,7 +49,7 @@ class CfgEditorSubcategories
 {
 	class ADFRC_MEN_DPDU // Category class, you point to it in editorSubcategory property
 	{
-		displayName =$STR_ADF_MEN_DPDU; // Name visible in the list
+		displayName ="$STR_ADF_MEN_DPDU"; // Name visible in the list
 	};
 };
 class cfgVehicles
@@ -61,9 +61,9 @@ class cfgVehicles
 		scope=1;
 		_generalMacro="ADFRC_uniform_dpdu_Base";
 		faction="ADF";
-		editorSubcategory=$STR_ADF_MEN_DPDU;
-		vehicleClass=$STR_ADF_MEN_DPDU;
-		author=$STR_ADF_AUTHOR;
+		editorSubcategory="$STR_ADF_MEN_DPDU";
+		vehicleClass="$STR_ADF_MEN_DPDU";
+		author="$STR_ADF_AUTHOR";
 		genericNames="NATOMen";
 		nakedUniform="U_BasicBody";
 		uniformClass="U_B_CombatUniform_mcam_vest";
@@ -152,7 +152,7 @@ class cfgVehicles
 		_generalMacro="B_Soldier_F";
 		displayName="Commando";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpdu\preview\ADFRC_rifleman_dpdu.jpg";
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformAccessories[]={};
 		nakedUniform="U_BasicBody";
 		uniformClass="ADFRC_uniform_dpdu";
@@ -168,7 +168,7 @@ class cfgVehicles
 	};
 	class ADFRC_grenadier_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -254,7 +254,7 @@ class cfgVehicles
 	};
 	class ADFRC_marksman_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -338,7 +338,7 @@ class cfgVehicles
 	};
 	class ADFRC_medic_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="Commando Medic";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpdu\preview\ADFRC_medic_dpdu.jpg";
@@ -380,7 +380,7 @@ class cfgVehicles
 	};
 	class ADFRC_riflemanAT_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -464,7 +464,7 @@ class cfgVehicles
 	};
 	class ADFRC_engineer_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Commando Engineer";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpdu\preview\ADFRC_engineer_dpdu.jpg";
 		engineer=1;
@@ -497,7 +497,7 @@ class cfgVehicles
 	};
 	class ADFRC_explosive_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Breacher";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpdu\preview\ADFRC_explosive_dpdu.jpg";
 		saboteur=1;
@@ -564,7 +564,7 @@ class cfgVehicles
 	};
 	class ADFRC_helicopterPilot_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope=1;
 		displayName="Helicopter Pilot";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpdu\preview\ADFRC_helicopterPilot_dpdu.jpg";
@@ -642,7 +642,7 @@ class cfgVehicles
 	};
 	class ADFRC_teamleader_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -728,7 +728,7 @@ class cfgVehicles
 	};
 	class ADFRC_squadleader_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -809,7 +809,7 @@ class cfgVehicles
 	};
 	class ADFRC_lightGunner_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -887,7 +887,7 @@ class cfgVehicles
 	};
 	class ADFRC_heavyGunner_dpdu: ADFRC_rifleman_dpdu
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		uniformClass="ADFRC_uniform_dpdu_recon";
 		model="\A3\characters_F\BLUFOR\b_soldier_03.p3d";
 		hiddenSelections[]=
@@ -1007,7 +1007,7 @@ class cfgWeapons
 	class ADFRC_uniform_dpdu: U_B_CombatUniform_mcam
 	{
 		scope=2;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Desert Uniform (Long Sleeve)";
 		hiddenSelections[]=
 		{
@@ -1028,7 +1028,7 @@ class cfgWeapons
 	class ADFRC_uniform_dpdu_medic: ADFRC_uniform_dpdu
 	{
 		scope=2;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Desert Uniform (Medic)";
 		hiddenSelectionsTextures[]=
 		{
@@ -1045,7 +1045,7 @@ class cfgWeapons
 	class ADFRC_uniform_dpdu_recon: ADFRC_uniform_dpdu
 	{
 		scope=2;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Disruptive Pattern Desert Uniform (Short Sleeve)";
 		hiddenSelections[]=
 		{
@@ -1065,7 +1065,7 @@ class cfgWeapons
 	};
 	class ADFRC_uniform_field_DPDU: Uniform_Base
 	{
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		scope = 2;
 		displayName = "Disruptive Pattern Desert Field Dress";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
@@ -1083,7 +1083,7 @@ class cfgWeapons
 	class ADFRC_uniform_dpdu_pilot: U_B_PilotCoveralls
 	{
 		scope=2;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		displayName="Army Aviation Coveralls (DPDU)";
 		class ItemInfo: UniformItem
 		{

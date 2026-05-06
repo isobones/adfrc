@@ -14,7 +14,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class Crew;
 		class ADFU_S70A_Pilot: Crew
 		{
-			file = \ADF_Air\adfrc_blackhawk\anim\S70A_Pilot.rtm;
+			file = "\ADF_Air\adfrc_blackhawk\anim\S70A_Pilot.rtm";
 			interpolateTo[] = {"ADFU_KIA_S70A_Pilot",1};
 
 			leftHandIKCurve[] = {1};
@@ -33,7 +33,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class ADFU_KIA_S70A_Pilot: DefaultDie
 		{
-			file = \ADF_Air\adfrc_blackhawk\anim\S70A_KIA_Pilot.rtm;
+			file = "\ADF_Air\adfrc_blackhawk\anim\S70A_KIA_Pilot.rtm";
 			speed = 0.5;
 			looped = 0;
 			terminal = 1;

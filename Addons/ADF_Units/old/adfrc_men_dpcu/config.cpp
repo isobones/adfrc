@@ -136,7 +136,7 @@ class cfgVehicles
 		displayName="Rifleman";
 		editorPreview = "\ADF_Units\old\ADFRC_men_dpcu\preview\ADFRC_rifleman_dpcu.jpg";
 		editorSubcategory= "ADFRC_MEN_DPCU";
-		vehicleClass=$STR_ADF_MEN_DPCU;
+		vehicleClass="$STR_ADF_MEN_DPCU";
 		uniformAccessories[]={};
 		uniformClass="ADFRC_uniform_dpcu";
 		hiddenSelections[]=

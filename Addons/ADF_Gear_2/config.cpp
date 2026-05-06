@@ -3,7 +3,7 @@ class CfgPatches
 	class ADF_Gear_2
 	{
 		name="ADF_Gear_2";
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		requiredAddons[]=
         	{
 			"A3_Data_F",

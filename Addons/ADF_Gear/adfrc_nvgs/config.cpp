@@ -3,7 +3,7 @@ class CfgPatches
 	class ADF_NVGs
 	{
 		name="ADF_NVGs";
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		requiredAddons[]=
         	{
 			"A3_Data_F",

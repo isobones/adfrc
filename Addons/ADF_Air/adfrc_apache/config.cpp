@@ -41,8 +41,8 @@ class CfgVehicles
 				speechPlural[] = {veh_air_gunship_p};
 			};
 		};
-		textSingular = $STR_A3_nameSound_veh_air_gunship_s;
-		textPlural = $STR_A3_nameSound_veh_air_gunship_p;
+		textSingular = "$STR_A3_nameSound_veh_air_gunship_s";
+		textPlural = "$STR_A3_nameSound_veh_air_gunship_p";
 		nameSound = veh_air_gunship_s;
 		scope = private;
 		displayName = "AH-64D Apache Guardian";
@@ -62,7 +62,7 @@ class CfgVehicles
         availableForSupportTypes[] = {CAS_Heli};
         class Library
         {
-            libTextDesc = $STR_A3_A_CfgVehicles_Heli_Attack_03_base_F_Library0;
+            libTextDesc = "$STR_A3_A_CfgVehicles_Heli_Attack_03_base_F_Library0";
         };
         
         /* RTD */
@@ -828,7 +828,7 @@ class CfgVehicles
 			}; */
 			class Indep
 			{
-				displayName = $STR_A3_TextureSources_Indep0;
+				displayName = "$STR_A3_TextureSources_Indep0";
 				author = "AveryTheKitty";
 				textures[] =
 				{
@@ -1128,7 +1128,7 @@ class CfgVehicles
     /* ADF */
 	class adfrc_apache: Heli_Attack_03_base_F
 	{
-		author = ADF Re-Cut;
+		author = "ADF Re-Cut";
 		displayName = "AH-64E Apache Guardian";
 		editorPreview = "\ADF_Air\adfrc_apache\preview\adfrc_apache.jpg";
 		scope = 2;
