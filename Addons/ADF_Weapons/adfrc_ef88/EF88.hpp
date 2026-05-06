@@ -362,7 +362,7 @@ class ADFRC_EF88GL_Base: Rifle_Base_F
 //mentioned earlier 
 		class EGLM: UGL_F
 		{
-			displayName = $STR_A3_A_CfgWeapons_arifle_AUG_GL_base_F_EGLM0;
+			displayName = "$STR_A3_A_CfgWeapons_arifle_AUG_GL_base_F_EGLM0";
 			useModelOptics = false;
 			useExternalOptic = false;
 			cameraDir = OP_look;
