@@ -75,5 +75,27 @@
 					<English>F1 Fragmentation Grenade</English>
 			</Key>
 		</Container>
+		<Container name="Settings">
+			<Key ID="STR_ADFRC_settingsCategory">
+				<Original>ADF Re-Cut</Original>
+				<English>ADF Re-Cut</English>
+			</Key>
+			<Key ID="STR_ADFRC_plowClearMines_name">
+				<Original>Mine plow clears mines</Original>
+				<English>Mine plow clears mines</English>
+			</Key>
+			<Key ID="STR_ADFRC_plowClearMines_tooltip">
+				<Original>When enabled, lowered mine plows automatically destroy mines they encounter without damaging the vehicle. Plow must be fully deployed.</Original>
+				<English>When enabled, lowered mine plows automatically destroy mines they encounter without damaging the vehicle. Plow must be fully deployed.</English>
+			</Key>
+			<Key ID="STR_ADFRC_plowDigTrenches_name">
+				<Original>Mine plow digs trenches</Original>
+				<English>Mine plow digs trenches</English>
+			</Key>
+			<Key ID="STR_ADFRC_plowDigTrenches_tooltip">
+				<Original>When enabled and grad_trenches is loaded, lowered mine plows can dig vehicle trenches by driving forward. No effect without grad_trenches.</Original>
+				<English>When enabled and grad_trenches is loaded, lowered mine plows can dig vehicle trenches by driving forward. No effect without grad_trenches.</English>
+			</Key>
+		</Container>
 	</Package>
 </Project>

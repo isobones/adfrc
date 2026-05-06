@@ -10,6 +10,7 @@ class CfgPatches
 			"ADF_Tracked",
 			"ADF_Weapons",
 			"A3_Armor_F_EPB",
+			"cba_main",
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -40,6 +41,7 @@ class CfgPatches
 };
 
 #include "c_ammo.hpp"
+#include "CfgDigVehicles.hpp"
 class DefaultEventHandlers;
 class WeaponFireGun;
 class WeaponCloudsGun;
@@ -2309,28 +2311,6 @@ class CfgVehicles
 			"sprocketcovers",
 			1,
 		};
-		class UserActions
-        {
-            class lower_plow
-            {
-                userActionID=50;
-                displayName="Lower plow";
-                radius=10;
-                showIn3D=17;
-                priority=1;
-                position="gunnerview";
-                onlyForPlayer=0;
-                condition="(alive this) && (isengineon this) && (this animationsourcephase 'plow' == 0) && (player in this) && (this animationsourcephase 'hideplow' == 1)";
-                statement="this animateDoor ['plow', 1];";
-            };
-            class raise_plow: lower_plow
-            {
-                userActionID=51;
-                displayName="Raise plow";
-                condition="(alive this) && (isengineon this) && (this animationsourcephase 'plow' == 1) && (player in this) && (this animationsourcephase 'hideplow' == 1)";
-                statement="this animateDoor [""plow"", 0];";
-            };
-        };
 		hiddenSelections[]=
 		{
 			"abramshull1",
@@ -3538,4 +3518,14 @@ class CfgVehicles
 			};
 		};
 	};
+};
+class Extended_Init_EventHandlers
+{
+    class adfrc_abrams
+    {
+        ADFRC_plowInit = "_this call compile preprocessFileLineNumbers '\ADF_Tracked\adfrc_abrams\scripts\fn_plowInit.sqf'";
+    };
+    class adfrc_m1a1aim_md:    adfrc_abrams {};
+    class adfrc_m1a1aim_gwot:  adfrc_abrams {};
+    class adfrc_m1a2sepv3_md:  adfrc_abrams {};
 };
