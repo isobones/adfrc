@@ -1128,7 +1128,7 @@ class CfgVehicles
     /* ADF */
 	class adfrc_apache: Heli_Attack_03_base_F
 	{
-		author = ADF Re-Cut;
+		author = "ADF Re-Cut";
 		displayName = "AH-64E Apache Guardian";
 		editorPreview = "\ADF_Air\adfrc_apache\preview\adfrc_apache.jpg";
 		scope = 2;
