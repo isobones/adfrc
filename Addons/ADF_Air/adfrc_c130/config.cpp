@@ -278,8 +278,8 @@ class CfgVehicles
 			class Ramp_Open
 			{
 				userActionID = 60;
-				displayName = $STR_ACTION_RAMP_OPEN0;
-				textToolTip = $STR_ACTION_RAMP_OPEN0;
+				displayName = "$STR_ACTION_RAMP_OPEN0";
+				textToolTip = "$STR_ACTION_RAMP_OPEN0";
 				displayNameDefault = "<img image='\A3\UI_F\Data\IGUI\Cfg\Actions\open_door_CA.paa' size='2.5' />";
 				position = "";
 				condition = "this doorPhase ""Door_1_source"" < 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
@@ -296,8 +296,8 @@ class CfgVehicles
 			class Ramp_Close: Ramp_Open
 			{
 				userActionID = 61;
-				displayName = $STR_ACTION_RAMP_CLOSE0;
-				textToolTip = $STR_ACTION_RAMP_CLOSE0;
+				displayName = "$STR_ACTION_RAMP_CLOSE0";
+				textToolTip = "$STR_ACTION_RAMP_CLOSE0";
 				condition = "this doorPhase ""Door_1_source"" > 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
 				statement = "this animateDoor ['Door_1_source', 0] && this animateDoor ['ramp_top', 0]";
 			};
