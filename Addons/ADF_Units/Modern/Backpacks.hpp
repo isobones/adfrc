@@ -5,7 +5,7 @@
 	class ADFRC_CarryAll_AMCU_MED;
 	class ADFRC_AssaultPack_AMCU_TL: ADFRC_AssaultPack_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportMagazines{
 			class _xx_1Rnd_HE_Grenade_shell{
 				magazine="1Rnd_HE_Grenade_shell";
@@ -35,7 +35,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_LMG: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -51,7 +51,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_MMG: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -67,7 +67,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_GSMG: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -83,7 +83,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_AB: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -99,7 +99,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_Diver: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_adfrc_ECH_AMCU{
 				name="adfrc_ECH_AMCU";
@@ -121,7 +121,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_Engineer: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -143,7 +143,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_Mine: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -165,7 +165,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_HAT: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -185,7 +185,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_MAT: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
@@ -205,7 +205,7 @@
 	};
 	class ADFRC_CarryAll_AMCU_GL: ADFRC_CarryAll_AMCU{
 		scope=1;
-		author=$STR_ADF_AUTHOR;
+		author="$STR_ADF_AUTHOR";
 		class TransportItems{
 			class _xx_ADFRC_booniehat_AMCU{
 				name="ADFRC_booniehat_AMCU";
