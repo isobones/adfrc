@@ -21,5 +21,4 @@ updates:
       prefix: "ci"
       include: "scope"
     labels:
-      - "dependencies"
-      - "ci"
+      - "meta"
