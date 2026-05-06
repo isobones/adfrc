@@ -1,4 +1,7 @@
 # ADF: Re-Cut
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/IsoBones/ADFRC/sqflint.yml?branch=main&style=flat-square&logo=bohemiainteractive&label=SQF%20Lint)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/IsoBones/ADFRC/configlint.yml?branch=main&style=flat-square&logo=cplusplus&label=Config%20Lint)
+
 
 A full Australian Defence Force faction mod for Arma 3.
 
