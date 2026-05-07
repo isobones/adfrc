@@ -4526,13 +4526,42 @@ class CfgVehicles
 		{
 			"Camo1",
 			"Camo2",
-			"Camo3"
+			"Camo3",
+			"Camo4",
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"ADF_Air\adfrc_chinook\data\ch47_ext_1_co.paa",
-			"ADF_Air\adfrc_chinook\data\ch47_ext_2_co.paa",
-			"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa"
+			"ADF_Air\adfrc_chinook\data\ch47_ext_1_sand_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47_ext_2_sand_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa",
+			"ADF_Air\adfrc_chinook\data\ch47extras_sand_co.paa",
+		};
+		class TextureSources
+		{
+			class Black
+			{
+				displayName="Black";
+				author="ADFRC_Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_chinook\data\ch47_ext_1_co.paa",
+					"ADF_Air\adfrc_chinook\data\ch47_ext_2_co.paa",
+					"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa",
+					"ADF_Air\adfrc_chinook\data\ch47extras_co.paa",
+				};
+			};
+			class Sand
+			{
+				displayName="Sand";
+				author="ADFRC_Quiggs";
+				textures[]=
+				{
+					"ADF_Air\adfrc_chinook\data\ch47_ext_1_sand_co.paa",
+					"ADF_Air\adfrc_chinook\data\ch47_ext_2_sand_co.paa",
+					"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa",
+					"ADF_Air\adfrc_chinook\data\ch47extras_sand_co.paa",
+				};
+			};
 		};
 		soundGetIn[]=
 		{
@@ -5748,16 +5777,33 @@ class CfgVehicles
 	class ADFRC_chinook_GWOT: ADFRC_chinook
 	{
 		faction = "ADFRC_F_GWOT";
+		author="$STR_ADF_AUTHOR";
+		displayname="CH-47D Chinook";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_chinook\data\ch47_ext_1_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47_ext_2_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa",
+			"ADF_Air\adfrc_chinook\data\ch47extras_co.paa",
+		};
 	};
 	class ADFRC_chinook_PCW: ADFRC_chinook
 	{
 		faction = "ADFRC_F_PCW";
+		scope=1;
 	};
 	class ADFRC_chinook_VIV: ADFRC_chinook
 	{
 		scope=2;
 		side=1;
-		author="Quiggs / Index";
+		author="$STR_ADF_AUTHOR";
 		faction = "ADFRC_F_MD";
 		model="ADF_Air\adfrc_chinook\CH_47F.P3D";
 		displayname="CH-47F Chinook (Cargo)";
@@ -5816,10 +5862,27 @@ class CfgVehicles
 	class ADFRC_chinook_VIV_GWOT: ADFRC_chinook_VIV
 	{
 		faction = "ADFRC_F_GWOT";
+		displayname="CH-47D Chinook (Cargo)";
+		author="$STR_ADF_AUTHOR";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"ADF_Air\adfrc_chinook\data\ch47_ext_1_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47_ext_2_co.paa",
+			"ADF_Air\adfrc_chinook\data\ch47f_nalepky_ca.paa",
+			"ADF_Air\adfrc_chinook\data\ch47extras_co.paa",
+		};
 	};
 	class ADFRC_chinook_VIV_PCW: ADFRC_chinook_VIV
 	{
 		faction = "ADFRC_F_PCW";
+		scope=1;
 	};
 };
 class CfgAmmo
