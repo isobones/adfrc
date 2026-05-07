@@ -5797,7 +5797,7 @@ class CfgVehicles
 	class ADFRC_chinook_PCW: ADFRC_chinook
 	{
 		faction = "ADFRC_F_PCW";
-		scope=1
+		scope=1;
 	};
 	class ADFRC_chinook_VIV: ADFRC_chinook
 	{
@@ -5882,7 +5882,7 @@ class CfgVehicles
 	class ADFRC_chinook_VIV_PCW: ADFRC_chinook_VIV
 	{
 		faction = "ADFRC_F_PCW";
-		scope=1
+		scope=1;
 	};
 };
 class CfgAmmo
