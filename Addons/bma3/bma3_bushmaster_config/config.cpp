@@ -1923,14 +1923,14 @@ class CfgVehicles
 				gunnerGetInAction="GetInLow";
 				gunnerGetOutAction="GetOutLow";
 				proxyIndex=1;
-				commanding=1;
+				commanding=-1;
 				gunnerName="Front Cover";
 				animationSourceHatch="HatchGunner";
 			};
 			class Turret_02: Turret_01
 			{
 				proxyIndex=2;
-				commanding=2;
+				commanding=-1;
 				gunnerName="Left Rear Cover";
 				gunnerInAction="bushmaster_ffv_rearleft";
 				animationSourceHatch="HatchGunnerRearLeft";
@@ -1940,7 +1940,7 @@ class CfgVehicles
 			class Turret_03: Turret_01
 			{
 				proxyIndex=3;
-				commanding=3;
+				commanding=-1;
 				gunnerName="Right Rear Cover";
 				gunnerInAction="bushmaster_ffv_rearright";
 				animationSourceHatch="HatchGunnerRearRight";
@@ -2270,7 +2270,7 @@ class CfgVehicles
 				gunnerGetInAction="GetInLow";
 				gunnerGetOutAction="GetOutLow";
 				proxyIndex=2;
-				commanding=2;
+				commanding=-1;
 				gunnerName="Left Rear Cover";
 				gunnerInAction="bushmaster_ffv_rearleft";
 				animationSourceHatch="HatchGunnerRearLeft";
@@ -2280,7 +2280,7 @@ class CfgVehicles
 			class Turret_02: Turret_01
 			{
 				proxyIndex=3;
-				commanding=3;
+				commanding=-1;
 				gunnerName="Right Rear Cover";
 				gunnerInAction="bushmaster_ffv_rearright";
 				animationSourceHatch="HatchGunnerRearRight";
