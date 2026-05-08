@@ -81,7 +81,7 @@ class cfgAmmo
 		indirectHitRange=20;
 		cost=200;
 		airFriction=0.075000003;
-		sideAirFriction=0.075000003;
+		sideAirFriction=0;
 		maxSpeed=265;
 		initTime=0;
 		thrustTime=0;
