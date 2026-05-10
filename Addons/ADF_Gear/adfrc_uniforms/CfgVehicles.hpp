@@ -308,7 +308,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -341,7 +342,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -411,7 +413,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -460,7 +463,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -614,7 +618,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -865,7 +870,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -1132,7 +1138,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -1186,7 +1193,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -1424,7 +1432,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -1466,7 +1475,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 
 		hiddenSelectionsTextures[] = {
@@ -1523,7 +1533,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1553,7 +1564,8 @@ class CfgVehicles{
 			"Shirt_1",
 			"Shirt_2",
 			"Shirt_3",
-			"Shirt_4"
+			"Shirt_4",
+			"insignia"
 		};
 		hiddenSelectionsTextures[]=
 		{
