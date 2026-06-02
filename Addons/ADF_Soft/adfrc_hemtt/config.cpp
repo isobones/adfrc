@@ -166,29 +166,35 @@ class CfgVehicles
 		faction = "ADFRC_F_GWOT";
 	};
 	
-////////////////////// ADF PCW VERSIONS //////////////////////
+////////////////////// OLD REDUNDANT ADF PCW VERSIONS //////////////////////
 	class ADFRC_hemtt_cargo_PCW: ADFRC_hemtt_cargo
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 	class ADFRC_hemtt_ammo_PCW: ADFRC_hemtt_ammo
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 	class ADFRC_hemtt_fuel_PCW: ADFRC_hemtt_fuel
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 	class ADFRC_hemtt_transport_PCW: ADFRC_hemtt_transport
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 	class ADFRC_hemtt_mover_PCW: ADFRC_hemtt_mover
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 	class ADFRC_hemtt_flatbed_PCW: ADFRC_hemtt_flatbed
 	{
-		faction = "ADFRC_F_PCW";
+		scope=1;
+		scopeCurator=1;
 	};
 };
