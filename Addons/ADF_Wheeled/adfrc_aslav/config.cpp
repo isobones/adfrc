@@ -1746,8 +1746,8 @@ class CfgVehicles
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_pc_ca.paa";
 		faction="ADFRC_F_MD";
-		crew="B_crew_F";
-		typicalCargo[] = {"B_soldier_F"};
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		transportSoldier = 6;
 		cargoProxyIndexes[] = {1,2,3,4,5,6};
 		getInProxyOrder[] = {1,2,3,4,5,6};
@@ -2418,8 +2418,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		faction="ADFRC_F_MD";
-		crew="B_crew_F";
-		typicalCargo[] = {"B_soldier_F"};
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		
 	};
 	class adfrc_aslav_25_mag58: adfrc_aslav_base
@@ -2430,8 +2430,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		faction="ADFRC_F_MD";
-		crew="B_crew_F";
-		typicalCargo[] = {"B_soldier_F"};
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		class RenderTargets
 		{
 			class commander_display
@@ -2681,8 +2681,8 @@ class CfgVehicles
 		scope=2;
 		scopeCurator=2;
 		faction="ADFRC_F_MD";
-		crew="B_crew_F";
-		typicalCargo[] = {"B_soldier_F"};
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 	};
 	class adfrc_aslav_pc_mag58: adfrc_aslav_pc
 	{
@@ -3992,8 +3992,8 @@ class CfgVehicles
 		scope=1;
 		scopeCurator=1;
 		faction="QAV_vehicles";
-		crew="B_crew_F";
-		typicalCargo[] = {"B_soldier_F"};
+		crew="ADFRC_MD_AMCU_Soldier_Crewman";
+		typicalCargo[] = {"ADFRC_MD_AMCU_Soldier_CavalryScout"};
 		enginePower=325;
 		peakTorque=750;
 		canFloat = 0;
