@@ -161,7 +161,7 @@ class CfgVehicles
 	{
 		faction = "ADFRC_F_GWOT";
 	};
-	class ADFRC_hemtt_box_GWOT: ADRFC_hemtt_box
+	class ADFRC_hemtt_box_GWOT: ADFRC_hemtt_box
 	{
 		faction = "ADFRC_F_GWOT";
 	};
