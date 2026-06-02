@@ -3976,6 +3976,10 @@ class CfgVehicles
 		faction="ADFRC_F_GWOT";
 		author="Quiggs";
 	};
+	//// BACKWARDS COMPATIBILITY --- THIS IS FOR THE OLD ASLAV25 CLASSNAME TO CONTINUE WORKING ////
+	class ADFRC_ASLAV: adfrc_aslav_25_mag58
+	{
+	};
 	/*  LAV-25A3 SLEP ------- This is a version for QAV, this model is not in use by the ADF, leaving here to convert over later
 	class ADF_Wheeled\adfrc_aslav25a3: adfrc_aslav_base
 	{
