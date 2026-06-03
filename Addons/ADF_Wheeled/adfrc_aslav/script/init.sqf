@@ -34,28 +34,31 @@ _markingSet = _this getVariable ["PlatoonMarkings", 0];
 if ((_markingSet isEqualTo 0) and (local _this)) then
 {
 	_baseTextures = [
-						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture1_co.paa",
-						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture2_co.paa",
-						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture3_co.paa",
-						"\ADF_Land\adfrc_aslav\data\ASLAV-25\texture4_co.paa"
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25hull1_co.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25hull2_co.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25turret_co.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25susp_co.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
+						"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
 					];
 	_addTextures =	[
-						"\ADF_Land\adfrc_aslav\data\labels\labels_01.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_02.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_03.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_04.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_05.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_06.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_07.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_08.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_09.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_10.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_11.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_12.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_13.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_14.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_15.paa",
-						"\ADF_Land\adfrc_aslav\data\labels\labels_16.paa"
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_01.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_02.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_03.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_05.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_06.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_07.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_08.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_09.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_10.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_11.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_12.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_13.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_14.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_15.paa",
+						"\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa"
 					];
 
 	//_texture = _baseTextures call BIS_fnc_selectRandom;
