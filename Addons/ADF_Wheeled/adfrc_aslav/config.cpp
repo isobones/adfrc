@@ -1520,14 +1520,14 @@ class CfgVehicles
 		};
 		hiddenSelections[]=
 		{
-			"lav25hull1",
-			"lav25hull2",
-			"lav25turret",
-			"lav25susp",
-			"lav25wheel",
-			"lav25extmesh",
-			"aslavparts",
-			"aslavmesh",
+			lav25hull1,
+			lav25hull2,
+			lav25turret,
+			lav25susp,
+			lav25wheel,
+			lav25extmesh,
+			aslavparts,
+			labels
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1538,6 +1538,7 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 		};
 		class TextureSources
 		{
@@ -1749,7 +1750,7 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [4, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [4, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [7, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [7, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
@@ -1887,24 +1888,24 @@ class CfgVehicles
 						value = 21;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
-					};
+					};*/
 					class Zero: One {
 						name = "Random";
 						tooltip = "Choose the markings randomly.";
 						value = 0;
-					};*/
+					};
 				};
 
 				//--- Optional properties
 				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
 				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
-				condition = "_this isKindOf 'ADFRC_ASLAV_base_F'"; // Condition for attribute to appear (see the table below)
+				condition = "_this isKindOf 'adfrc_aslav_base'"; // Condition for attribute to appear (see the table below)
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 			};
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "(_this select 0) execVM ""\adf_wheeled\adfrc_aslav\script\init.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
+			init = "private _veh = _this select 0; if (local _veh) then {[_veh, """", [], false] call bis_fnc_initVehicle;}; _veh execVM ""\ADF_Wheeled\adfrc_aslav\script\labelInit25.sqf"";";
 		};
 	};
 	class adfrc_aslav_pc_base: adfrc_aslav_base
@@ -1945,6 +1946,7 @@ class CfgVehicles
 			"lav25extmesh",
 			"aslavparts",
 			"aslavmesh",
+			"labels",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1956,6 +1958,7 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 		};
 		class TextureSources
 		{
@@ -1973,6 +1976,7 @@ class CfgVehicles
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
+					"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 				};
 			};
 			class un
@@ -2574,6 +2578,178 @@ class CfgVehicles
 					point = "int_light_4";
 				};
 			};
+		};
+		class Attributes
+		{
+			class PlatoonMarkings
+			{
+				//--- Mandatory properties
+				displayName = "Vehicle Callsigns";
+				tooltip = "The vehicle callsign shown on the sides and back of the vehicle";
+				property = "ADFRC_PlatoonMarkings"; //Unique config property name saved in SQM
+				control = "Combo"; //UI control base class displayed in Edit Attributes window, points to Cfg3DEN >> Attributes
+
+				//Expression called when applying the attribute in Eden and at the scenario start
+				//The expression is called twice - first for data validation, and second for actual saving
+				//Entity is passed as _this, value is passed as _value
+				//%s is replaced by attribute config name. It can be used only once in the expression
+				//In MP scenario, the expression is called only on server.
+				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [8, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [8, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
+
+				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
+				//Entity (unit, group, marker, comment etc.) is passed as _this
+				//Returned value is the default value
+				//Used when no value is returned, or when it is of other type than NUMBER, STRING or ARRAY
+				//Custom attributes of logic entities (e.g., modules) are saved always, even when they have default value
+				defaultValue = 0;
+				
+				class Values 
+				{
+					class One {
+						name = "Bullryder | 7B";
+						tooltip = "Select this callsign";
+						value = 1;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_01.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_01.paa";
+					};
+					class Two: One {
+						name = "Cerebral | 3A";
+						value = 2;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_02.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_02.paa";
+					};
+					class Three: One {
+						name = "Circle Work | 5A";
+						value = 3;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_03.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_03.paa";
+					};
+					class Four: One {
+						name = "Bollocks | 11-A";
+						value = 4;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
+					};
+					class Five: One {
+						name = "Comalgo | 2C";
+						value = 5;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_05.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_05.paa";
+					};
+					class Six: One {
+						name = "Sandgroper | 15C";
+						value = 6;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_06.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_06.paa";
+					};
+					class Seven: One {
+						name = "Courage | 12C";
+						value = 7;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_07.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_07.paa";
+					};
+					class Eight: One {
+						name = "Atomic | 13A";
+						value = 8;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_08.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_08.paa";
+					};
+					class Nine: One {
+						name = "Cannibal | 33B";
+						value = 9;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_09.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_09.paa";
+					};
+					class Ten: One {
+						name = "Bourbon | 23B";
+						value = 10;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_10.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_10.paa";
+					};
+					class Eleven: One {
+						name = "Cant Help Ya | 21A";
+						value = 11;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_11.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_11.paa";
+					};
+					class Twelve: One {
+						name = "ANZAC | 11A";
+						value = 12;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_12.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_12.paa";
+					};
+					class Thirteen: One {
+						name = "Angry Bird | 9A";
+						value = 13;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_13.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_13.paa";
+					};
+					class Fourteen: One {
+						name = "Atlas | 13B";
+						value = 14;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_14.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_14.paa";
+					};
+					class Fifteen: One {
+						name = "Achilles | 22C";
+						value = 15;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_15.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_15.paa";
+					};
+					class Sixteen: One {
+						name = "Boomer | 31A";
+						value = 16;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
+					};
+					/* Seventeen: One {
+						name = "Cerebral | 1";
+						value = 17;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
+					};
+					class Eighteen: One {
+						name = "Circle Work | 8";
+						value = 18;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
+					};
+					class Nineteen: One {
+						name = "Bollocks | 5";
+						value = 19;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
+					};
+					class Twenty: One {
+						name = "Hammer time | 31";
+						value = 20;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
+					};
+					class TwentyOne: One {
+						name = "NONE";
+						tooltip = "No callsign marking will be displayed.";
+						value = 21;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
+					};
+					class Zero: One {
+						name = "Random";
+						tooltip = "Choose the markings randomly.";
+						value = 0;
+					};*/
+				};
+
+				//--- Optional properties
+				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
+				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
+				condition = "_this isKindOf 'ADFRC_ASLAV_base_F'"; // Condition for attribute to appear (see the table below)
+				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
+			};
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "(_this select 0) execVM ""\adf_wheeled\adfrc_aslav\script\labelInitPC.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 	};
 	class adfrc_aslav_25: adfrc_aslav_base
