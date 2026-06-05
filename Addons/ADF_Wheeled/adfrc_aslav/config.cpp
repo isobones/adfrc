@@ -12,6 +12,7 @@ class CfgPatches
 			"ADF_Weapons",
 			"A3_Armor_F_EPB",
 			"cba_main",
+			"cba_xeh"
 		};
 		units[] = 
 		{
@@ -156,12 +157,14 @@ class CfgVehicles
 		class EventHandlers;
 	};
 	class APC_Wheeled_03_base_F: Wheeled_APC_F
-	{};
-	
+	{
+	};
 	class adfrc_aslav_base: APC_Wheeled_03_base_F
 	{
 		author = "Quiggs / Index";
 		model = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_25.p3d";
+		tf_hasLRradio=1;
+		tf_RadioType="TFAR_rt1523g";
 		mapSize=10.25;
 		accuracy=0.25;
 		brakeIdleSpeed=1.78;
@@ -535,8 +538,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_1_1_hide";
-				armorComponent = "wheel_1_1_hide";
-				name="wheel_1_1_hide";
+				armorComponent = "wheel_1_1_hit";
+				name="wheel_1_1_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -546,8 +549,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_1_2_hide";
-				armorComponent = "wheel_1_2_hide";
-				name="wheel_1_2_hide";
+				armorComponent = "wheel_1_2_hit";
+				name="wheel_1_2_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -557,8 +560,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_1_3_hide";
-				armorComponent = "wheel_1_3_hide";
-				name="wheel_1_3_hide";
+				armorComponent = "wheel_1_3_hit";
+				name="wheel_1_3_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -568,8 +571,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_1_4_hide";
-				armorComponent = "wheel_1_4_hide";
-				name="wheel_1_4_hide";
+				armorComponent = "wheel_1_4_hit";
+				name="wheel_1_4_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -579,8 +582,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_2_1_hide";
-				armorComponent = "wheel_2_1_hide";
-				name="wheel_2_1_hide";
+				armorComponent = "wheel_2_1_hit";
+				name="wheel_2_1_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -590,8 +593,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_2_2_hide";
-				armorComponent = "wheel_2_2_hide";
-				name="wheel_2_2_hide";
+				armorComponent = "wheel_2_2_hit";
+				name="wheel_2_2_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -601,8 +604,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_2_3_hide";
-				armorComponent = "wheel_2_3_hide";
-				name="wheel_2_3_hide";
+				armorComponent = "wheel_2_3_hit";
+				name="wheel_2_3_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -612,8 +615,8 @@ class CfgVehicles
 			{
 				radius = 0.33;
 				visual = "wheel_2_4_hide";
-				armorComponent = "wheel_2_4_hide";
-				name="wheel_2_4_hide";
+				armorComponent = "wheel_2_4_hit";
+				name="wheel_2_4_hit";
 				armor = -250;
 				minimalHit = -0.016;
 				explosionShielding = 4;
@@ -1179,185 +1182,7 @@ class CfgVehicles
 				animPeriod=0;
 				initPhase=0;
 				author="ADFRC";
-			};
-			/*
-			class tools
-			{
-				//DisplayName="Tool Set";
-				source="user";
-				animPeriod=0;
-				initPhase=1;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_tools",1};
-			};
-			class fak
-			{
-				//DisplayName="Interior First Aid Kit";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class ammo_f
-			{
-				//DisplayName="Ammo Boxs 1";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class ammo_r
-			{
-				//DisplayName="Ammo Boxs 2";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class fuel_l
-			{
-				//DisplayName="Left Fuel Jerrys";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_l",1};
-			};
-			class fuel_r
-			{
-				//DisplayName="Right Fuel Jerrys";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_r",1};
-			};class hull_jerry
-			{
-				//DisplayName="Hull Jerry";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class spinalboard
-			{
-				//DisplayName="Spinalboard";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class stretcher
-			{
-				//DisplayName="Stretcher";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_r",1};
-			};
-			class shackles_front
-			{
-				DisplayName="Shackles Front";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class shackles_rear
-			{
-				DisplayName="Shackles Rear";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class rack_l
-			{
-				//source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
 			};	
-			class rack_r
-			{
-				//source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};	
-			class rack_tools
-			{
-				//source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class equipment1
-			{
-				//DisplayName="Field Equipment 1 (Roof)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class equipment1_l
-			{
-				//DisplayName="Field Equipment 1 (Left)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_l",1};
-			};
-			class equipment1_r
-			{
-				//DisplayName="Field Equipment 1 (Right)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-				forceAnimatePhase = 1;
-				forceAnimate[] = {"rack_r",1};
-			};
-			class rack_gear_right
-			{
-				//DisplayName="Turret Equipment 1 (Right)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class rack_gear_rear
-			{
-				//DisplayName="Turret Equipment 1 (Rear)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class rack_gear_left
-			{
-				//DisplayName="Turret Equipment 1 (Left)";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};
-			class turretjerrys
-			{
-				//DisplayName="Turret Jerry Cans";
-				source="user";
-				animPeriod=0;
-				initPhase=0;
-				author="ADFRC";
-			};*/
-		
 			
 			/* Old garage selections
 			class slat_armor
@@ -1527,7 +1352,9 @@ class CfgVehicles
 			lav25wheel,
 			lav25extmesh,
 			aslavparts,
-			labels
+			labels,
+			labels_door_l,
+			labels_door_r,
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1538,6 +1365,8 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 		};
 		class TextureSources
@@ -1750,7 +1579,7 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [7, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [7, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; private _i = _value; if (_value isEqualTo 0) then {_i = floor (random 22) + 1}; private _f = if (_i < 10) then {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _i]} else {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _i]}; {_this setObjectTextureGlobal [_x, _f]} forEach [7, 8, 9];";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
@@ -1781,7 +1610,7 @@ class CfgVehicles
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_03.paa";
 					};
 					class Four: One {
-						name = "Bollocks | 11-A";
+						name = "Bollocks | 11A";
 						value = 4;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
@@ -1858,44 +1687,49 @@ class CfgVehicles
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
 					};
-					/* Seventeen: One {
-						name = "Cerebral | 1";
+					class Seventeen: One {
+						name = "Big Papi | 23C";
 						value = 17;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
 					};
 					class Eighteen: One {
-						name = "Circle Work | 8";
+						name = "Blame | 21B";
 						value = 18;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
 					};
 					class Nineteen: One {
-						name = "Bollocks | 5";
+						name = "Boxer | 2F";
 						value = 19;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
 					};
 					class Twenty: One {
-						name = "Hammer time | 31";
+						name = "Hammersley | 0C";
 						value = 20;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
 					};
 					class TwentyOne: One {
-						name = "NONE";
-						tooltip = "No callsign marking will be displayed.";
+						name = "Hold My Brew | 0F";
 						value = 21;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
-					};*/
+					};
+					class TwentyTwo: One {
+						name = "Akula | 1D";
+						value = 22;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_22.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_22.paa";
+					};
 					class Zero: One {
 						name = "Random";
 						tooltip = "Choose the markings randomly.";
 						value = 0;
 					};
 				};
-
+				
 				//--- Optional properties
 				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
 				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
@@ -1903,9 +1737,18 @@ class CfgVehicles
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 			};
 		};
-		class EventHandlers: EventHandlers
+		class ACE_Actions
 		{
-			init = "private _veh = _this select 0; if (local _veh) then {[_veh, """", [], false] call bis_fnc_initVehicle;}; _veh execVM ""\ADF_Wheeled\adfrc_aslav\script\labelInit25.sqf"";";
+			class ACE_MainActions;
+			class ADFRC_removeSpareWheel
+			{
+				displayName = "Remove Spare Wheel";
+				distance = 4;
+				position = "[-0.40, -3.92, -1.23]";
+				condition = "_target animationSourcePhase 'sparewheel' > 0.5";
+				statement = "[5, [_player, _target], {(_this select 0) params ['_unit','_veh']; [_veh, ['sparewheel', 0]] remoteExec ['animateSource', 0, _veh]; ['ACE_Wheel', getPosASL _unit, 0] call ace_repair_fnc_spawnObject}, {}, 'Removing spare wheel...'] call ace_common_fnc_progressBar;";//"[_player, _target] call ADFRC_fnc_removeSpareWheel"; <-- this is here in case we want to make it a proper function later. I couldn't be fucked doing it now -- Bones
+				icon = "\a3\ui_f\data\igui\cfg\actions\repair_ca.paa";
+			};
 		};
 	};
 	class adfrc_aslav_pc_base: adfrc_aslav_base
@@ -1945,8 +1788,8 @@ class CfgVehicles
 			"lav25wheel",
 			"lav25extmesh",
 			"aslavparts",
-			"aslavmesh",
 			"labels",
+			"labels_ramp",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -1958,7 +1801,8 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
-			"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_00.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_00.paa",
 		};
 		class TextureSources
 		{
@@ -1976,7 +1820,6 @@ class CfgVehicles
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 					"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
-					"ADF_Wheeled\adfrc_aslav\data\labels\labels_01.paa",
 				};
 			};
 			class un
@@ -2355,7 +2198,7 @@ class CfgVehicles
 				DisplayName="Tool Set";
 				source="user";
 				animPeriod=0;
-				initPhase=1;
+				initPhase=0;
 				author="ADFRC";
 				forceAnimatePhase = 1;
 				forceAnimate[] = {"rack_tools",1};
@@ -2594,7 +2437,7 @@ class CfgVehicles
 				//Entity is passed as _this, value is passed as _value
 				//%s is replaced by attribute config name. It can be used only once in the expression
 				//In MP scenario, the expression is called only on server.
-				expression = "_this setVariable ['%s', _value, true]; if (_value isEqualTo 0) exitWith {Nil}; if (_value < 10) then {_this setobjecttextureGlobal [8, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _value]]} else {_this setobjecttextureGlobal [8, format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _value]]};";
+				expression = "_this setVariable ['%s', _value, true]; private _i = _value; if (_value isEqualTo 0) then {_i = floor (random 22) + 1}; private _f = if (_i < 10) then {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _i]} else {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _i]}; {_this setObjectTextureGlobal [_x, _f]} forEach [8, 9];";
 
 				//Expression called when custom property is undefined yet (i.e., when setting the attribute for the first time)
 				//Entity (unit, group, marker, comment etc.) is passed as _this
@@ -2625,7 +2468,7 @@ class CfgVehicles
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_03.paa";
 					};
 					class Four: One {
-						name = "Bollocks | 11-A";
+						name = "Bollocks | 11A";
 						value = 4;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_04.paa";
@@ -2702,54 +2545,59 @@ class CfgVehicles
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_16.paa";
 					};
-					/* Seventeen: One {
-						name = "Cerebral | 1";
+					class Seventeen: One {
+						name = "Big Papi | 23C";
 						value = 17;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_17.paa";
 					};
 					class Eighteen: One {
-						name = "Circle Work | 8";
+						name = "Blame | 21B";
 						value = 18;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_18.paa";
 					};
 					class Nineteen: One {
-						name = "Bollocks | 5";
+						name = "Boxer | 2F";
 						value = 19;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_19.paa";
 					};
 					class Twenty: One {
-						name = "Hammer time | 31";
+						name = "Hammersley | 0C";
 						value = 20;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_20.paa";
 					};
 					class TwentyOne: One {
-						name = "NONE";
-						tooltip = "No callsign marking will be displayed.";
+						name = "Hold My Brew | 0F";
 						value = 21;
 						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
 						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_21.paa";
+					};
+					class TwentyTwo: One {
+						name = "Akula | 1D";
+						value = 22;
+						picture = "\adf_wheeled\adfrc_aslav\data\labels\labels_22.paa";
+						pictureRight = "\adf_wheeled\adfrc_aslav\data\labels\labels_22.paa";
 					};
 					class Zero: One {
 						name = "Random";
 						tooltip = "Choose the markings randomly.";
 						value = 0;
-					};*/
+					};
 				};
 
 				//--- Optional properties
 				unique = 0; // When 1, only one entity of the type can have the value in the mission (used for example for variable names or player control)
 				validate = "number"; // Validate the value before saving. If the value is not of given type e.g. "number", the default value will be set. Can be "none", "expression", "condition", "number" or "variable"
-				condition = "_this isKindOf 'ADFRC_ASLAV_base_F'"; // Condition for attribute to appear (see the table below)
+				condition = "_this isKindOf 'adfrc_aslav_base'"; // Condition for attribute to appear (see the table below)
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 			};
 		};
 		class EventHandlers: EventHandlers
 		{
-			init = "(_this select 0) execVM ""\adf_wheeled\adfrc_aslav\script\labelInitPC.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
+			//init = "(_this select 0) execVM ""\adf_wheeled\adfrc_aslav\script\labelInitPC.sqf""; if (local (_this select 0)) then {[(_this select 0), """", [], false] call bis_fnc_initVehicle;};";
 		};
 	};
 	class adfrc_aslav_25: adfrc_aslav_base
@@ -3298,7 +3146,7 @@ class CfgVehicles
 			"lav25wheel",
 			"lav25extmesh",
 			"aslavparts",
-			"aslavmesh",
+			"labels",
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -3310,6 +3158,7 @@ class CfgVehicles
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25wheel_co.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\lav25extmesh_ca.paa",
 			"ADF_Wheeled\adfrc_aslav\data\textures\standard\aslavparts_co.paa",
+			"ADF_Wheeled\adfrc_aslav\data\labels\labels_06.paa",
 		};
 		class AnimationSources: AnimationSources
 		{
@@ -3391,7 +3240,6 @@ class CfgVehicles
 			};
 		};
 	};
-	/* ---- DO NOT ENABLE, CURRENT CTD BUG
 	class adfrc_aslav_c: adfrc_aslav_pc
 	{
 		displayName="ASLAV-C";
@@ -3401,6 +3249,10 @@ class CfgVehicles
 		reportRemoteTargets = 1;
 		receiveRemoteTargets = 1;
 		transportSoldier = 0;
+		tf_hasLRradio=1;
+		tf_RadioType="TFAR_rt1523g";
+		tf_range=20000;
+		tf_subtype="airborne";
 		class Turrets: Turrets
 		{
 			class M2Turret: M2Turret{};
@@ -3410,91 +3262,18 @@ class CfgVehicles
 				gunnerName="Radio Operator"; 
 				proxyIndex = 3;
 				forceHideGunner = 1;
+				isPersonTurret=0;
 				class Components
 				{
-					class SensorsManagerComponent
-					{
-						class Components
-						{
-							class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-							{
-								class AirTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								class GroundTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								typeRecognitionDistance=5000;
-								maxTrackableSpeed = 1e10;
-								angleRangeHorizontal=360;
-								angleRangeVertical=180;
-								animDirection="driverview";
-								aimDown=0;
-							};
-							class LaserSensorComponent : SensorTemplateLaser
-							{
-								class AirTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								class GroundTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								typeRecognitionDistance=5000;
-								maxTrackableSpeed = 1e10;
-								angleRangeHorizontal=150;
-								angleRangeVertical=180;
-								animDirection="cameraturret";
-								aimDown=0;
-							};
-							class DataLinkSensorComponent: SensorTemplateDataLink
-							{
-							};
-						};
-					};
 					class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
 					{
 						defaultDisplay="MinimapDisplay";
 						class Components
 						{
-							class EmptyDisplay
-							{
-								componentType="EmptyDisplayComponent";
-							};
-							class MinimapDisplay
-							{
-								componentType="MinimapDisplayComponent";
-								resource="RscCustomInfoMiniMap";
-							};
-							class UAVDisplay
-							{
-								componentType="UAVFeedDisplayComponent";
-							};
-							class SensorDisplay
-							{
-								componentType="SensorsDisplayComponent";
-								range[]={10000,7500,5000,2500,1000,};
-								resource="RscCustomInfoSensors";
-							};
+							class EmptyDisplay { componentType="EmptyDisplayComponent"; };
+							class MinimapDisplay { componentType="MinimapDisplayComponent"; resource="RscCustomInfoMiniMap"; };
+							class UAVDisplay { componentType="UAVFeedDisplayComponent"; };
+							class SensorDisplay { componentType="SensorsDisplayComponent"; range[]={10000,7500,5000,2500,1000}; resource="RscCustomInfoSensors"; };
 						};
 					};
 					class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
@@ -3502,32 +3281,24 @@ class CfgVehicles
 						defaultDisplay="SensorDisplay";
 						class Components
 						{
-							class EmptyDisplay
-							{
-								componentType="EmptyDisplayComponent";
-							};
-							class MinimapDisplay
-							{
-								componentType="MinimapDisplayComponent";
-								resource="RscCustomInfoMiniMap";
-							};
-							class UAVDisplay
-							{
-								componentType="UAVFeedDisplayComponent";
-							};
-							class SensorDisplay
-							{
-								componentType="SensorsDisplayComponent";
-								range[]={10000,7500,5000,2500,1000,};
-								resource="RscCustomInfoSensors";
-							};
+							class EmptyDisplay { componentType="EmptyDisplayComponent"; };
+							class MinimapDisplay { componentType="MinimapDisplayComponent"; resource="RscCustomInfoMiniMap"; };
+							class UAVDisplay { componentType="UAVFeedDisplayComponent"; };
+							class SensorDisplay { componentType="SensorsDisplayComponent"; range[]={10000,7500,5000,2500,1000}; resource="RscCustomInfoSensors"; };
+						};
+					};
+					class SensorsManagerComponent
+					{
+						class Components
+						{
+							class DataLinkSensorComponent: SensorTemplateDataLink {};
 						};
 					};
 				};
 			};
 			class CargoTurret_03: CargoTurret_02
 			{
-				gunnerName="Warfare Officer"; 
+				gunnerName="Warfare Officer";
 				gunnerInAction="passenger_generic01_foldhands";
 				proxyType = "CPGunner";
 				proxyIndex = 4;
@@ -3551,37 +3322,12 @@ class CfgVehicles
 					minMoveZ = 1;
 					maxMoveZ = 0.1;
 				};
-				class Components
+				/*class Components
 				{
 					class SensorsManagerComponent
 					{
 						class Components
 						{
-							class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-							{
-								class AirTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								class GroundTarget
-								{
-									minRange=1;
-									maxRange=5000;
-									objectDistanceLimitCoef=1;
-									viewDistanceLimitCoef=1;
-									nightRangeCoef = 0.5;
-								};
-								typeRecognitionDistance=5000;
-								maxTrackableSpeed = 1e10;
-								angleRangeHorizontal=360;
-								angleRangeVertical=180;
-								animDirection="driverview";
-								aimDown=0;
-							};
 							class LaserSensorComponent : SensorTemplateLaser
 							{
 								class AirTarget
@@ -3664,7 +3410,7 @@ class CfgVehicles
 							};
 						};
 					};
-				};
+				};*/
 			};
 		};
 		class AnimationSources: AnimationSources
@@ -3694,37 +3440,12 @@ class CfgVehicles
 				animPeriod=1;
 			};
 		};
-		class Components
+		/*class Components
 		{
 			class SensorsManagerComponent
 			{
 				class Components
 				{
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-					{
-						class AirTarget
-						{
-							minRange=1;
-							maxRange=5000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-							nightRangeCoef = 0.5;
-						};
-						class GroundTarget
-						{
-							minRange=1;
-							maxRange=5000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-							nightRangeCoef = 0.5;
-						};
-						typeRecognitionDistance=5000;
-						maxTrackableSpeed = 1e10;
-						angleRangeHorizontal=360;
-						angleRangeVertical=180;
-						animDirection="driverview";
-						aimDown=0;
-					};
 					class LaserSensorComponent : SensorTemplateLaser
 					{
 						class AirTarget
@@ -3807,8 +3528,8 @@ class CfgVehicles
 					};
 				};
 			};
-		};
-	};*/
+		};*/
+	};
 	class adfrc_aslav_s: adfrc_aslav_pc
 	{
 		displayName="ASLAV-S";
@@ -3818,6 +3539,10 @@ class CfgVehicles
 		reportOwnPosition = 1;
 		reportRemoteTargets = 1;
 		receiveRemoteTargets = 1;
+		tf_hasLRradio=1;
+		tf_RadioType="TFAR_rt1523g";
+		tf_range=20000;
+		tf_subtype="airborne";
 		class RenderTargets
 		{
 			class cameradisplay0
@@ -4453,4 +4178,15 @@ class CfgVehicles
 			class CargoGunner_2: CargoGunner_2{};
 		};
 	};*/
+};
+class Extended_Init_EventHandlers
+{
+    class adfrc_aslav_base
+    {
+        ADFRC_labelRandom = "_this spawn {sleep 0.1; params ['_veh']; if (!isServer) exitWith {}; private _v = _veh getVariable ['PlatoonMarkings', 0]; if (_v isEqualTo 0) then {private _i = floor (random 22) + 1; private _f = if (_i < 10) then {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _i]} else {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _i]}; {_veh setObjectTextureGlobal [_x, _f]} forEach [7, 8, 9];}};";
+    };
+	class adfrc_aslav_pc_base
+    {
+        ADFRC_labelRandom = "_this spawn {sleep 0.1; params ['_veh']; if (!isServer) exitWith {}; private _v = _veh getVariable ['PlatoonMarkings', 0]; if (_v isEqualTo 0) then {private _i = floor (random 22) + 1; private _f = if (_i < 10) then {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_0%1.paa', _i]} else {format ['\adf_wheeled\adfrc_aslav\data\labels\labels_%1.paa', _i]}; {_veh setObjectTextureGlobal [_x, _f]} forEach [8, 9];}};";
+    };
 };
