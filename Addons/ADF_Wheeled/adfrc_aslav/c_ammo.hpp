@@ -296,7 +296,7 @@ class cfgWeapons
 			FCSMaxLeadSpeed = 0;
 			minZeroing = 0;
 			magazineReloadTime = 0.3;
-			modes[] = {/*"100rpm",*/"player","close","short","medium","far"};
+			modes[] = {"player","100rpm","close","short","medium","far"};
 			class player: player
 			{
 				reloadTime=__EVAL(60/215);
@@ -304,11 +304,11 @@ class cfgWeapons
 				textureType = "fullAuto";
 				sounds[] = {"StandardSound"};
 			};
-			/*class 100rpm: player --- figured players can manually click rather than hold? means less weapons to cycle through for fire rate
+			class 100rpm: player
 			{
 				reloadTime=__EVAL(60/100);
 				textureType = "burst";
-			};*/
+			};
 		};
 		class AP: autocannon_Base_F 
 		{
