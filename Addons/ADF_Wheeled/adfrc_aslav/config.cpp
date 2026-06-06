@@ -2604,7 +2604,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-25";
 		author="Quiggs";
-		//editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_crv.jpg";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_25.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav25_ca.paa";
 		side = 1;
@@ -2619,6 +2619,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-25 (Mag58)";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_25_mag58.jpg";
 		side = 1;
 		scope=2;
 		scopeCurator=2;
@@ -2868,7 +2869,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-PC (M2HB)";
 		author="Quiggs";
-		//editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_crv.jpg";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		side=1;
 		scope=2;
@@ -2882,11 +2883,13 @@ class CfgVehicles
 		scope=0;
 		displayName="ASLAV-PC (M2HB/Mag58)";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc_mag58.jpg";
 	};
 	class adfrc_aslav_pc_rws: adfrc_aslav_pc
 	{
 		displayName="ASLAV-PC (M2HB-RWS)";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc_rws.jpg";
 		class Turrets: Turrets
 		{
 			class M2RWSTurret: NewTurret
@@ -3126,6 +3129,7 @@ class CfgVehicles
 		displayName="ASLAV-A";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_a_ca.paa";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_a.jpg";
 		vehicleClass = "Support";
 		attendant = 1;
 		transportSoldier = 2;
@@ -3245,6 +3249,7 @@ class CfgVehicles
 		displayName="ASLAV-C";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_c_ca.paa";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_c.jpg";
 		reportOwnPosition = 1;
 		reportRemoteTargets = 1;
 		receiveRemoteTargets = 1;
@@ -3535,6 +3540,7 @@ class CfgVehicles
 		displayName="ASLAV-S";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_c_ca.paa";
 		author="Quiggs";
+		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_s.jpg";
 		transportSoldier = 0;
 		reportOwnPosition = 1;
 		reportRemoteTargets = 1;

@@ -3061,7 +3061,7 @@ class CfgVehicles
 	{
 		displayName="M1A1AIM";
 		author="ADFRC - Quiggs";
-		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a1aim.jpg";
+		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a1aim_md.jpg";
 		model="ADF_Tracked\adfrc_abrams\adfrc_m1a1aim.p3d";
 		picture="ADF_Tracked\adfrc_abrams\adfrc_m1a1aim_icon";
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a1_CA.paa";
@@ -3081,7 +3081,7 @@ class CfgVehicles
 	{
 		displayName="M1A2SEPv3";
 		author="ADFRC - Quiggs";
-		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a1aim.jpg";
+		editorPreview = "\ADF_Tracked\adfrc_abrams\data\adfrc_m1a2sepv3_md.jpg";
 		model="ADF_Tracked\adfrc_abrams\adfrc_m1a2sepv3.p3d";
 		picture="ADF_Tracked\adfrc_abrams\adfrc_m1a1aim_icon";
 		icon="\ADF_Tracked\adfrc_abrams\data\UI\icomap_m1a2tusk_CA.paa";
