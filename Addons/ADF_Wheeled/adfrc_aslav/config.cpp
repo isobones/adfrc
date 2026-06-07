@@ -1737,25 +1737,12 @@ class CfgVehicles
 				typeName = "NUMBER"; // Defines data type of saved value, can be STRING, NUMBER or BOOL. Used only when control is "Combo", "Edit" or their variants
 			};
 		};
-		class ACE_Actions
-		{
-			class ACE_MainActions;
-			class ADFRC_removeSpareWheel
-			{
-				displayName = "Remove Spare Wheel";
-				distance = 4;
-				position = "[-0.40, -3.92, -1.23]";
-				condition = "_target animationSourcePhase 'sparewheel' > 0.5";
-				statement = "[5, [_player, _target], {(_this select 0) params ['_unit','_veh']; [_veh, ['sparewheel', 0]] remoteExec ['animateSource', 0, _veh]; ['ACE_Wheel', getPosASL _unit, 0] call ace_repair_fnc_spawnObject}, {}, 'Removing spare wheel...'] call ace_common_fnc_progressBar;";//"[_player, _target] call ADFRC_fnc_removeSpareWheel"; <-- this is here in case we want to make it a proper function later. I couldn't be fucked doing it now -- Bones
-				icon = "\a3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-			};
-		};
 	};
 	class adfrc_aslav_pc_base: adfrc_aslav_base
 	{
 		author="Quiggs";
 		model = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_pc.p3d";
-		//editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_crv.jpg";
+		//editorPreview = "\ADF_Wheeled\adfrc_aslav_crv.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_pc_ca.paa";
 		faction="ADFRC_F_MD";
@@ -2604,7 +2591,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-25";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_25.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_25.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav25_ca.paa";
 		side = 1;
@@ -2619,7 +2606,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-25 (Mag58)";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_25_mag58.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_25_mag58.jpg";
 		side = 1;
 		scope=2;
 		scopeCurator=2;
@@ -2869,7 +2856,7 @@ class CfgVehicles
 	{
 		displayName="ASLAV-PC (M2HB)";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_pc.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		side=1;
 		scope=2;
@@ -2883,13 +2870,13 @@ class CfgVehicles
 		scope=0;
 		displayName="ASLAV-PC (M2HB/Mag58)";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc_mag58.jpg";
+		//editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_pc_mag58.jpg";
 	};
 	class adfrc_aslav_pc_rws: adfrc_aslav_pc
 	{
 		displayName="ASLAV-PC (M2HB-RWS)";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_pc_rws.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_pc_rws.jpg";
 		class Turrets: Turrets
 		{
 			class M2RWSTurret: NewTurret
@@ -3129,7 +3116,7 @@ class CfgVehicles
 		displayName="ASLAV-A";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_a_ca.paa";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_a.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_a.jpg";
 		vehicleClass = "Support";
 		attendant = 1;
 		transportSoldier = 2;
@@ -3249,7 +3236,7 @@ class CfgVehicles
 		displayName="ASLAV-C";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_c_ca.paa";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_c.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_c.jpg";
 		reportOwnPosition = 1;
 		reportRemoteTargets = 1;
 		receiveRemoteTargets = 1;
@@ -3540,7 +3527,7 @@ class CfgVehicles
 		displayName="ASLAV-S";
 		icon="ADF_Wheeled\adfrc_aslav\data\ui\icon_aslav_c_ca.paa";
 		author="Quiggs";
-		editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_s.jpg";
+		editorPreview = "\ADF_Wheeled\adfrc_aslav\adfrc_aslav_s.jpg";
 		transportSoldier = 0;
 		reportOwnPosition = 1;
 		reportRemoteTargets = 1;
@@ -4063,7 +4050,7 @@ class CfgVehicles
 	{
 		displayName="LAV-25A3 SLEP";
 		author="Quiggs";
-		//editorPreview = "ADF_Wheeled\adfrc_aslav\ADF_Wheeled\adfrc_aslav_crv.jpg";
+		//editorPreview = "\ADF_Wheeled\adfrc_aslav_crv.jpg";
 		//picture="ADF_Wheeled\adfrc_aslav\data\ui\boxercrv.paa";
 		//icon="ADF_Wheeled\adfrc_aslav\data\ui\mapboxercrv.paa";
 		side = 1;
